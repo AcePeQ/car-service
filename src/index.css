@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Faster+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+  --color-black-background: #161616;
+  --color-white-background-1: #f4f3f7;
+  --color-white-background-2: #efedf5;
+
+  --color-black-text: #171717;
+  --color-white-text: #fff;
+
+  --color-white-additional: #fdfdfd;
+
+  --color-green-1: #00bd83;
+  --color-green-2: #37a893;
+  --color-green-3: #03594a;
+  --color-green-4: #284f4b;
+  --color-green-5: #173632;
+
+  --font-lato: "Lato", sans-serif;
+  --font-faster-one: "Faster One", sans-serif;
+  --font-neue: "Bebas Neue", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: var(--font-lato);
+  color: var(--color-white-text);
+  background-color: var(--color-black-background);
+}
+
+img {
+  height: auto;
+}
