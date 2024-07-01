@@ -1,0 +1,10 @@
+.hero {
+  min-height: 100vh;
+  width: 100%;
+
+  background-image: linear-gradient(#161616dd, #161616dd),
+    url(../assets/car1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
