@@ -1,0 +1,19 @@
+.slider {
+  background-color: var(--color-black-background);
+
+  border-top: 2px solid var(--color-white-text);
+  border-bottom: 2px solid var(--color-white-text);
+
+  height: 8rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider span {
+  font-size: 2.8rem;
+  font-weight: 700;
+  font-family: inherit;
+  text-transform: uppercase;
+}

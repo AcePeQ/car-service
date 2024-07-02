@@ -1,0 +1,28 @@
+.btn {
+  display: inline-block;
+  font-family: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: var(--color-white-text);
+  color: var(--color-black-text);
+}
+
+.secondary {
+  border: 2px solid var(--color-white-text);
+  color: var(--color-white-text);
+}
+
+.big {
+  padding: 1.1rem 0.5rem;
+  width: 25rem;
+  font-weight: 600;
+
+  border-radius: 12px;
+
+  font-size: 2.2rem;
+}
