@@ -46,50 +46,6 @@ function TextSlider() {
       >
         Jeden z najlepszych mechaników w Grębkowkie
       </AnimatedSpan>
-
-      {/* <motion.span
-        key={windowWidth + 1}
-        initial={{ x: `-${windowWidth}px` }}
-        animate={{ x: `${windowWidth}px` }}
-        transition={{
-          duration: 10,
-          repeat: Infinity,
-          ease: "linear",
-          repeatDelay: 5,
-        }}
-      >
-        Moblina wulkanizacja dostępna pod numerem 664 234 322
-      </motion.span>
-
-      <motion.span
-        key={windowWidth + 2}
-        initial={{ x: `-${windowWidth}px` }}
-        animate={{ x: `${windowWidth}px` }}
-        transition={{
-          duration: 10,
-          repeat: Infinity,
-          ease: "linear",
-          delay: 5,
-          repeatDelay: 5,
-        }}
-      >
-        Jesteśmy czynni 24/7, zadzwoń już teraz
-      </motion.span>
-
-      <motion.span
-        key={windowWidth + 3}
-        initial={{ x: `-${windowWidth}px` }}
-        animate={{ x: `${windowWidth}px` }}
-        transition={{
-          duration: 10,
-          repeat: Infinity,
-          ease: "linear",
-          delay: 10,
-          repeatDelay: 5,
-        }}
-      >
-        Jeden z najlepszych mechaników w Grębkowkie
-      </motion.span> */}
     </div>
   );
 }
