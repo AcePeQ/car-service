@@ -1,6 +1,9 @@
 import { NavLink } from "react-router-dom";
-import styles from "../styles/NavBar.module.css";
-import Logo from "./Logo";
+import { motion } from "framer-motion";
+
+import styles from "./NavBar.module.css";
+
+import Logo from "../Logo/Logo";
 
 function NavBar() {
   const activeState = ({ isActive }) => {

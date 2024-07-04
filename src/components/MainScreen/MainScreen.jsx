@@ -1,5 +1,6 @@
-import styles from "../styles/MainScreen.module.css";
-import ButtonNavigate from "./ButtonNavigate";
+import styles from "./MainScreen.module.css";
+
+import ButtonNavigate from "../ButtonNavigate/ButtonNavigate";
 
 function MainScreen() {
   return (

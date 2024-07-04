@@ -1,4 +1,4 @@
-import styles from "../styles/ButtonNavigate.module.css";
+import styles from "./ButtonNavigate.module.css";
 
 function ButtonNavigate({ children, onClick, type, size }) {
   return (

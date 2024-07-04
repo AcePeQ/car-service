@@ -3,7 +3,7 @@
   width: 100%;
 
   background-image: linear-gradient(#161616af, #161616af),
-    url(../assets/car1.jpg);
+    url(/src/assets/car1.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

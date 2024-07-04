@@ -1,0 +1,97 @@
+import { useEffect, useState } from "react";
+import styles from "./TextSlider.module.css";
+import AnimatedSpan from "./AnimatedSpan";
+
+function TextSlider() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(function () {
+    function fallback() {
+      setWindowWidth(window.innerWidth);
+    }
+    window.addEventListener("resize", fallback);
+
+    return () => {
+      window.removeEventListener("resize", fallback);
+    };
+  }, []);
+
+  return (
+    <div className={styles.slider}>
+      <AnimatedSpan
+        windowWidth={windowWidth}
+        duration="10"
+        repeatDelay="5"
+        keyNumber="1"
+      >
+        Moblina wulkanizacja dostępna pod numerem 664 234 322
+      </AnimatedSpan>
+
+      <AnimatedSpan
+        windowWidth={windowWidth}
+        duration="10"
+        repeatDelay="5"
+        delay="5"
+        keyNumber="2"
+      >
+        Jesteśmy czynni 24/7, zadzwoń już teraz
+      </AnimatedSpan>
+
+      <AnimatedSpan
+        windowWidth={windowWidth}
+        duration="10"
+        repeatDelay="5"
+        delay="10"
+        keyNumber="3"
+      >
+        Jeden z najlepszych mechaników w Grębkowkie
+      </AnimatedSpan>
+
+      {/* <motion.span
+        key={windowWidth + 1}
+        initial={{ x: `-${windowWidth}px` }}
+        animate={{ x: `${windowWidth}px` }}
+        transition={{
+          duration: 10,
+          repeat: Infinity,
+          ease: "linear",
+          repeatDelay: 5,
+        }}
+      >
+        Moblina wulkanizacja dostępna pod numerem 664 234 322
+      </motion.span>
+
+      <motion.span
+        key={windowWidth + 2}
+        initial={{ x: `-${windowWidth}px` }}
+        animate={{ x: `${windowWidth}px` }}
+        transition={{
+          duration: 10,
+          repeat: Infinity,
+          ease: "linear",
+          delay: 5,
+          repeatDelay: 5,
+        }}
+      >
+        Jesteśmy czynni 24/7, zadzwoń już teraz
+      </motion.span>
+
+      <motion.span
+        key={windowWidth + 3}
+        initial={{ x: `-${windowWidth}px` }}
+        animate={{ x: `${windowWidth}px` }}
+        transition={{
+          duration: 10,
+          repeat: Infinity,
+          ease: "linear",
+          delay: 10,
+          repeatDelay: 5,
+        }}
+      >
+        Jeden z najlepszych mechaników w Grębkowkie
+      </motion.span> */}
+    </div>
+  );
+}
+
+export default TextSlider;
