@@ -20,8 +20,8 @@ function TextSlider() {
     <div className={styles.slider}>
       <AnimatedSpan
         windowWidth={windowWidth}
-        duration="10"
-        repeatDelay="5"
+        duration="20"
+        repeatDelay="10"
         keyNumber="1"
       >
         Moblina wulkanizacja dostępna pod numerem 664 234 322
@@ -29,9 +29,9 @@ function TextSlider() {
 
       <AnimatedSpan
         windowWidth={windowWidth}
-        duration="10"
-        repeatDelay="5"
-        delay="5"
+        duration="20"
+        repeatDelay="10"
+        delay="10"
         keyNumber="2"
       >
         Jesteśmy czynni 24/7, zadzwoń już teraz
@@ -39,9 +39,9 @@ function TextSlider() {
 
       <AnimatedSpan
         windowWidth={windowWidth}
-        duration="10"
-        repeatDelay="5"
-        delay="10"
+        duration="20"
+        repeatDelay="10"
+        delay="20"
         keyNumber="3"
       >
         Jeden z najlepszych mechaników w Grębkowkie

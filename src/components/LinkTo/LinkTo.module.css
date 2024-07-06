@@ -1,0 +1,51 @@
+.link {
+  display: inline-block;
+  font-family: inherit;
+  background: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+
+  position: relative;
+}
+
+.primary {
+  background-color: var(--color-white-text);
+  color: var(--color-black-text);
+}
+
+.secondary {
+  border: 2px solid var(--color-white-text);
+  color: var(--color-white-text);
+}
+
+.big {
+  padding: 1.1rem 0.5rem;
+  width: 25rem;
+  font-weight: 600;
+
+  border-radius: 12px;
+
+  font-size: 2.2rem;
+}
+
+.clip_primary {
+  background-color: var(--color-green-1);
+  color: var(--color-white-text);
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: auto;
+}
+
+.clip_secondary {
+  background-color: var(--color-green-1);
+  border: 2px solid var(--color-white-text);
+  color: var(--color-white-text);
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: auto;
+}

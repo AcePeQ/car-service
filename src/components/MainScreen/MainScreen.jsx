@@ -1,6 +1,7 @@
 import styles from "./MainScreen.module.css";
 
 import ButtonNavigate from "../ButtonNavigate/ButtonNavigate";
+import LinkTo from "../LinkTo/LinkTo";
 
 function MainScreen() {
   return (
@@ -21,12 +22,12 @@ function MainScreen() {
         </p>
 
         <div className={styles.buttons}>
-          <ButtonNavigate type="primary" size="big">
+          <LinkTo type="primary" size="big">
             Kontakt
-          </ButtonNavigate>
-          <ButtonNavigate type="secondary" size="big">
+          </LinkTo>
+          <LinkTo type="secondary" size="big">
             Moblina wulkanizacja
-          </ButtonNavigate>
+          </LinkTo>
         </div>
       </div>
     </div>
