@@ -1,40 +1,19 @@
-import { NavLink } from "react-router-dom";
-import { motion } from "framer-motion";
-
 import styles from "./NavBar.module.css";
 
 import Logo from "../Logo/Logo";
+import LinkNav from "./LinkNav";
 
 function NavBar() {
-  const activeState = ({ isActive }) => {
-    return {
-      backgroundColor: isActive ? `#03594a` : "",
-      borderRadius: isActive ? "6px" : "",
-    };
-  };
-
   return (
     <div className={styles.header}>
       <div className={styles.navigation}>
         <Logo />
         <nav className={styles.nav}>
           <ul>
-            <li>
-              <NavLink to="/" style={activeState}>
-                Strona główna
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/page" style={activeState}>
-                Moblina wulkanizacja
-              </NavLink>
-            </li>
-            <li>
-              <NavLink>Usługi</NavLink>
-            </li>
-            <li>
-              <NavLink>Kontakt</NavLink>
-            </li>
+            <LinkNav to="/">Strona główna</LinkNav>
+            <LinkNav to="/page1">Moblina wulkanizacja</LinkNav>
+            <LinkNav to="/page2">Usługi</LinkNav>
+            <LinkNav to="/page3">Kontakt</LinkNav>
           </ul>
         </nav>
       </div>

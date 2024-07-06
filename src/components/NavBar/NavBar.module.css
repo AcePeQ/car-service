@@ -29,28 +29,6 @@
   gap: 5rem;
 }
 
-.nav a:link,
-.nav a:visited {
-  display: inline-block;
-  text-decoration: none;
-  color: var(--color-white-text);
-
-  font-size: 2.2rem;
-
-  padding: 0.5rem 1.5rem;
-  border-radius: 6px;
-
-  transition: all 0.4s;
-}
-
-/*ANIMACJA HOVERA, zaczyna się od najechania na pozycje przycisku i rozprzestrzenia się*/
-/* .nav a:hover,
-.nav a:active {
-  background-color: var(--color-green-1);
-  border-radius: 6px;
-} */
-
-.nav a.active {
-  background-color: var(--color-green-5);
-  border-radius: 6px;
+.nav li {
+  position: relative;
 }

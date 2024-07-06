@@ -22,10 +22,10 @@ function MainScreen() {
         </p>
 
         <div className={styles.buttons}>
-          <LinkTo type="primary" size="big">
+          <LinkTo type="primary" size="big" to="/">
             Kontakt
           </LinkTo>
-          <LinkTo type="secondary" size="big">
+          <LinkTo type="secondary" size="big" to="/page">
             Moblina wulkanizacja
           </LinkTo>
         </div>
