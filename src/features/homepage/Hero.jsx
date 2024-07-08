@@ -1,8 +1,8 @@
 import styles from "./Hero.module.css";
 
-import NavBar from "../NavBar/NavBar";
-import MainScreen from "../MainScreen/MainScreen";
-import TextSlider from "../TextSlider/TextSlider";
+import NavBar from "../navbar/NavBar";
+import MainScreen from "./components/mainscreen/MainScreen";
+import TextSlider from "./components/textslider/TextSlider";
 
 function Hero() {
   return (

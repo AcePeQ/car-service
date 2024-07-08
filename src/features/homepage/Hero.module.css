@@ -1,6 +1,5 @@
 .hero {
-  min-height: 100vh;
-  width: 100%;
+  min-height: 100dvh;
 
   background-image: linear-gradient(#161616af, #161616af),
     url(/src/assets/car1.jpg);

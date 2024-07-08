@@ -1,7 +1,7 @@
 import styles from "./NavBar.module.css";
 
-import Logo from "../Logo/Logo";
-import LinkNav from "./LinkNav";
+import Logo from "../../components/Logo/Logo";
+import LinkNav from "./components/linknav/LinkNav";
 
 function NavBar() {
   return (

@@ -1,31 +1,33 @@
 import { Link } from "react-router-dom";
-import { motion, motionValue } from "framer-motion";
+import { motion } from "framer-motion";
 
 import styles from "./LinkTo.module.css";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 import CustomAnimatedComponent from "../../utils/CustomAnimatedComponent/CustomAnimatedComponent";
 
-function LinkTo({ children, type, size, to }) {
-  const path = {
-    initial: {
-      display: "none",
-      alignItems: "center",
-      clipPath: `circle(0% at 50% 50%)`,
-      transition: {
-        duration: 1,
-      },
+const path = {
+  initial: {
+    display: "none",
+    alignItems: "center",
+    clipPath: `circle(0% at 50% 50%)`,
+    transition: {
+      duration: 1,
+      ease: "linear",
     },
-    animate: {
-      display: "inline-block",
-      alignItems: "center",
-      clipPath: `circle(142% at 50% 50%)`,
-      transition: {
-        duration: 1,
-      },
+  },
+  animate: {
+    display: "inline-block",
+    alignItems: "center",
+    clipPath: `circle(142% at 50% 50%)`,
+    transition: {
+      duration: 1,
+      ease: "linear",
     },
-  };
+  },
+};
 
+function LinkTo({ children, type, size, to }) {
   return (
     <CustomAnimatedComponent
       as={Link}

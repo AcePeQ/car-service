@@ -21,7 +21,7 @@
 .mainScreen h1 {
   text-align: center;
   font-family: var(--font-neue);
-  margin: 0 0 4rem 0;
+  margin-bottom: 4rem;
   line-height: 0.85;
   letter-spacing: 10px;
 
@@ -44,6 +44,8 @@
 
 .subTextLower {
   margin-top: 7rem;
+  margin-bottom: 2.5rem;
+
   font-weight: 500;
   font-size: 4.2rem;
 
@@ -53,9 +55,6 @@
 
 .buttons {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-
-  gap: 10rem;
-  margin-top: 2.5rem;
 }

@@ -1,7 +1,6 @@
 import styles from "./MainScreen.module.css";
 
-import ButtonNavigate from "../ButtonNavigate/ButtonNavigate";
-import LinkTo from "../LinkTo/LinkTo";
+import LinkTo from "../../../../components/LinkTo/LinkTo";
 
 function MainScreen() {
   return (

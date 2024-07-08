@@ -1,9 +1,8 @@
-import Hero from "../../components/Hero/Hero";
-import styles from "./Homepage.module.css";
+import Hero from "../../features/homepage/Hero";
 
 function Homepage() {
   return (
-    <section className={styles.homepage}>
+    <section>
       <Hero />
     </section>
   );

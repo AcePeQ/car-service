@@ -1,13 +1,13 @@
 .header {
-  width: 100%;
-  height: 7.2rem;
+  height: 7.5rem;
 
   background-color: var(--color-black-background);
 
+  border-bottom: 2px solid var(--color-white-text);
+
   display: flex;
   align-items: center;
-
-  border-bottom: 2px solid var(--color-white-text);
+  justify-content: center;
 }
 
 .navigation {
@@ -17,14 +17,12 @@
 
   margin: 0 auto;
 
-  width: 95%;
+  flex: 0 1 95%;
 }
 
 .nav ul {
   display: flex;
   list-style: none;
-
-  height: 100%;
 
   gap: 5rem;
 }
