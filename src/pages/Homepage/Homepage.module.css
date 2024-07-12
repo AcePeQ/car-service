@@ -1,0 +1,12 @@
+.feature {
+  width: 95%;
+
+  border-radius: 2.5rem;
+
+  margin: 25rem auto;
+  padding: 20rem 10rem 5rem 10rem;
+
+  background-color: var(--color-white-background-1);
+
+  position: relative;
+}

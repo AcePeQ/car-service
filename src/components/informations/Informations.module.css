@@ -1,0 +1,50 @@
+.information_box {
+  display: flex;
+  /* flex: 0 0 auto; */
+
+  gap: 8rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  font-size: 1.8rem;
+}
+
+.column p:first-child {
+  display: flex;
+  align-items: center;
+
+  font-weight: 500;
+
+  gap: 1.5rem;
+
+  font-size: 2.4rem;
+}
+
+.icon {
+  border: 3px solid var(--color-green-1);
+  width: 5.5rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column span:not(.icon) {
+  display: block;
+
+  margin-top: 0.2rem;
+}
+
+.status {
+  text-align: center;
+  color: var(--color-green-1);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}

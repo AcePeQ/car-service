@@ -13,7 +13,7 @@ function NavBar() {
             <LinkNav to="/">Strona główna</LinkNav>
             <LinkNav to="/page1">Moblina wulkanizacja</LinkNav>
             <LinkNav to="/page2">Usługi</LinkNav>
-            <LinkNav to="/page3">Kontakt</LinkNav>
+            <LinkNav to="/contact">Kontakt</LinkNav>
           </ul>
         </nav>
       </div>
