@@ -1,8 +1,4 @@
-import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
-
 import styles from "./Map.module.css";
-
-const SERVICE_POSITION = [52.261697, 21.902037];
 
 export default function Map() {
   return (

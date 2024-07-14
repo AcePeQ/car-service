@@ -52,3 +52,11 @@ body {
 img {
   height: auto;
 }
+
+.gm-style iframe + div {
+  border: none !important;
+}
+
+:global(.gm-style iframe + div) {
+  border: none !important;
+}
