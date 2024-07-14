@@ -10,6 +10,11 @@
   justify-content: center;
 }
 
+.transparentBG {
+  background: transparent;
+  background-color: transparent;
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;

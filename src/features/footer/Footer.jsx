@@ -17,13 +17,13 @@ function Footer() {
             <Link to="/">Strona główna</Link>
           </li>
           <li className={styles.nav_item}>
-            <Link>Mobilna wulkanizacja</Link>
+            <Link to="/mobile-car">Mobilna wulkanizacja</Link>
           </li>
           <li className={styles.nav_item}>
             <Link>Usługi</Link>
           </li>
           <li className={styles.nav_item}>
-            <Link>Kontakt</Link>
+            <Link to="/contact">Kontakt</Link>
           </li>
         </ul>
       </nav>

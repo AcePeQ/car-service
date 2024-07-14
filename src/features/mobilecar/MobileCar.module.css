@@ -1,0 +1,122 @@
+.layout {
+  flex: 1;
+}
+
+.container {
+  max-width: 90%;
+  margin: 2.5rem auto 0;
+}
+
+.mobile_car {
+  display: flex;
+  gap: 8rem;
+}
+
+.textBox {
+  flex: 1;
+}
+
+.textBox h3 {
+  font-size: 6.4rem;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: var(--font-neue);
+
+  margin-bottom: 1.5rem;
+}
+
+.textBox p {
+  font-size: 2rem;
+}
+
+.textBox .call {
+  margin-top: 4rem;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+
+  color: var(--color-green-1);
+}
+
+.textBox .number {
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-align: center;
+
+  color: var(--color-green-1);
+}
+
+.services {
+  flex: 2;
+  padding: 0 1.25rem;
+
+  display: grid;
+
+  justify-items: center;
+  align-items: center;
+
+  justify-content: center;
+
+  column-gap: 2rem;
+  row-gap: 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+
+.service {
+  color: var(--color-white-text);
+  border-radius: 6px;
+  padding: 1.5rem 2rem;
+
+  min-width: 25rem;
+  max-width: 30rem;
+
+  transition: all 0.4s;
+}
+
+.service:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0.5rem 3rem rgba(0, 189, 131, 0.15);
+
+  color: var(--color-green-1);
+}
+
+/* .service svg {
+  transition: all 0.4s;
+}
+
+.service:hover svg {
+  fill: var(--color-green-1);
+} */
+
+.service div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service p {
+  margin-top: 1rem;
+
+  font-size: 2.4rem;
+  font-weight: 600;
+
+  text-align: center;
+}
+
+.gallery {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; */
+
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fit, minmax(max-content, auto)); */
+  /* grid-template-columns: repeat(8, minmax(50rem, 1fr)); */
+}
+
+.gallery img {
+  height: 30rem;
+
+  border: 6px solid #fff;
+}

@@ -1,0 +1,28 @@
+.map_container {
+  height: 100%;
+  width: 100%;
+
+  padding: 0 5rem;
+}
+
+.map {
+  height: 100%;
+  width: 100%;
+}
+
+:global(.leaflet-popup .leaflet-popup-content-wrapper) {
+  background-color: var(--color-black-background);
+  color: var(--color-white-text);
+  padding-right: 0.6rem;
+}
+
+:global(.leaflet-popup .leaflet-popup-content) {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+:global(.leaflet-popup .leaflet-popup-tip) {
+  background-color: var(--color-black-background);
+}

@@ -1,4 +1,5 @@
 @import "https://unpkg.com/leaflet@1.9.3/dist/leaflet.css";
+@import "leaflet-routing-machine/dist/leaflet-routing-machine.css";
 
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Bungee+Shade&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nosifer&display=swap");
 
@@ -43,7 +44,9 @@ body {
   font-weight: 400;
   font-family: var(--font-lato);
   color: var(--color-white-text);
-  background-color: var(--color-black-background);
+  background-image: url(../assets/zwartevilt.webp);
+  max-width: 300rem;
+  margin: 0 auto;
 }
 
 img {

@@ -6,7 +6,7 @@ import styles from "./Layout.module.css";
 function Layout() {
   return (
     <div className={styles.layout}>
-      <NavBar />
+      <NavBar transparent="true" />
       <Outlet />
     </div>
   );
