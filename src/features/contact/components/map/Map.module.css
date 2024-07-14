@@ -6,23 +6,14 @@
 }
 
 .map {
-  height: 100%;
+  height: 55rem;
   width: 100%;
+
+  border: none;
+  border-radius: 6px;
 }
 
-:global(.leaflet-popup .leaflet-popup-content-wrapper) {
-  background-color: var(--color-black-background);
-  color: var(--color-white-text);
-  padding-right: 0.6rem;
-}
-
-:global(.leaflet-popup .leaflet-popup-content) {
-  font-size: 1.6rem;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-:global(.leaflet-popup .leaflet-popup-tip) {
-  background-color: var(--color-black-background);
+.gm-style iframe + div {
+  border: none !important;
+  opacity: 0 !important;
 }

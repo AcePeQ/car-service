@@ -6,7 +6,7 @@ import Form from "./components/formEmail/Form";
 
 function Contact() {
   return (
-    <div className={styles.contact}>
+    <div className={styles.layout}>
       <div className={styles.container}>
         <Form />
 
