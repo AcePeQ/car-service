@@ -1,15 +1,8 @@
 .features {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  width: 100%;
-
   margin: 5rem 0 0;
 }
 
 .title {
-  flex: 1 1 auto;
   text-align: center;
   font-family: var(--font-neue);
   letter-spacing: 8px;
@@ -24,9 +17,6 @@
 .row {
   display: flex;
   gap: 5rem;
-
-  min-height: 40rem;
-
   padding: 2.5rem 5rem;
 }
 
@@ -35,17 +25,10 @@
 }
 
 .row:not(:last-child) {
-  margin-bottom: 23rem;
+  margin-bottom: 24rem;
 }
 
 .row div {
-  flex: 1;
-
-  display: flex;
-  flex-direction: column;
-
-  justify-content: center;
-
   color: var(--color-black-text);
 }
 
@@ -66,9 +49,22 @@
 
 .text_box {
   display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  flex: 1;
+}
+
+.text_box div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .img_box {
+  flex: 1;
+  display: flex;
+
   border-radius: 9px;
   box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
 
@@ -82,7 +78,9 @@
 }
 
 .row img {
-  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 
   transition: all 0.4s;
 }

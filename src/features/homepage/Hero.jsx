@@ -6,11 +6,11 @@ import TextSlider from "./components/textslider/TextSlider";
 
 function Hero() {
   return (
-    <div className={styles.hero}>
+    <section className={styles.hero}>
       <NavBar />
       <MainScreen />
       <TextSlider />
-    </div>
+    </section>
   );
 }
 

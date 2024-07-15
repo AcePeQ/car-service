@@ -1,32 +1,15 @@
-import { Link } from "react-router-dom";
-import Logo from "../../components/Logo/Logo";
-
 import styles from "./Footer.module.css";
+
+import Logo from "../../components/Logo/Logo";
 import Informations from "../../components/informations/Informations";
+import FooterNav from "./components/FooterNav";
 
 function Footer() {
   return (
     <footer className={styles.footer}>
       <Logo />
-
       <Informations />
-
-      <nav>
-        <ul>
-          <li className={styles.nav_item}>
-            <Link to="/">Strona główna</Link>
-          </li>
-          <li className={styles.nav_item}>
-            <Link to="/mobile-car">Mobilna wulkanizacja</Link>
-          </li>
-          <li className={styles.nav_item}>
-            <Link>Usługi</Link>
-          </li>
-          <li className={styles.nav_item}>
-            <Link to="/contact">Kontakt</Link>
-          </li>
-        </ul>
-      </nav>
+      <FooterNav />
     </footer>
   );
 }

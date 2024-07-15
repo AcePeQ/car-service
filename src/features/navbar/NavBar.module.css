@@ -1,13 +1,6 @@
 .header {
-  height: 7.5rem;
-
   background-color: var(--color-black-background);
-
   border-bottom: 2px solid var(--color-white-text);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .transparentBG {
@@ -20,9 +13,7 @@
   justify-content: space-between;
   align-items: center;
 
-  margin: 0 auto;
-
-  flex: 0 1 95%;
+  padding: 1rem 2rem;
 }
 
 .nav ul {

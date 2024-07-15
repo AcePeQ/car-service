@@ -1,9 +1,7 @@
 .feature {
-  width: 95%;
-
   border-radius: 2.5rem;
 
-  margin: 25rem auto;
+  margin: 25rem 5rem;
   padding: 20rem 10rem 5rem 10rem;
 
   background-color: var(--color-white-background-1);

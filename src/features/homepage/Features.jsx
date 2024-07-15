@@ -54,11 +54,15 @@ function Row({ title, buttonTitle, imgSrc, imgAlt, children }) {
       <div className={styles.text_box}>
         <h3>{title}</h3>
         <p>{children}</p>
-        <LinkTo type="row">{buttonTitle}</LinkTo>
+        <div>
+          <LinkTo type="row" size="big" clip="clip_row">
+            {buttonTitle}
+          </LinkTo>
+        </div>
       </div>
-      <div className={styles.img_box}>
+      <figure className={styles.img_box}>
         <img src={imgSrc} alt={imgAlt} />
-      </div>
+      </figure>
     </div>
   );
 }

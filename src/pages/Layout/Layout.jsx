@@ -6,8 +6,12 @@ import styles from "./Layout.module.css";
 function Layout() {
   return (
     <div className={styles.layout}>
-      <NavBar transparent="true" />
-      <Outlet />
+      <header>
+        <NavBar transparent="true" />
+      </header>
+      <main className={styles.main}>
+        <Outlet />
+      </main>
     </div>
   );
 }

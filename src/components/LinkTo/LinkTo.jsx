@@ -9,7 +9,6 @@ import CustomAnimatedComponent from "../../utils/CustomAnimatedComponent/CustomA
 const path = {
   initial: {
     display: "none",
-    alignItems: "center",
     clipPath: `circle(0% at 50% 50%)`,
     transition: {
       duration: 1,
@@ -17,9 +16,8 @@ const path = {
     },
   },
   animate: {
-    display: "inline-block",
-    alignItems: "center",
-    clipPath: `circle(142% at 50% 50%)`,
+    display: "block",
+    clipPath: `circle(145% at 50% 50%)`,
     transition: {
       duration: 1,
       ease: "linear",
@@ -27,7 +25,7 @@ const path = {
   },
 };
 
-function LinkTo({ children, type, size, to }) {
+function LinkTo({ children, type, size, to, clip }) {
   return (
     <CustomAnimatedComponent
       as={Link}
@@ -40,9 +38,7 @@ function LinkTo({ children, type, size, to }) {
       {children}
       <motion.div
         variants={path}
-        className={`${styles.link} ${
-          type === "primary" ? styles.clip_primary : styles.clip_secondary
-        } ${styles.big}`}
+        className={`${styles.link} ${styles[clip]} ${styles[size]}`}
       >
         {children}
       </motion.div>

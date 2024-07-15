@@ -17,11 +17,10 @@ import mobile7 from "/src/assets/mobile7.jpg";
 
 function MobileCar() {
   return (
-    <div className={styles.layout}>
-      <div className={styles.container}>
-        <MobileCarLayout />
-        <Gallery />
-      </div>
+    <div className={styles.container}>
+      <MobileCarLayout />
+
+      <MobileCarServces />
     </div>
   );
 }
@@ -30,7 +29,7 @@ function MobileCarLayout() {
   return (
     <div className={styles.mobile_car}>
       <MobileCarInformations />
-      <MobileCarServces />
+      <Gallery />
     </div>
   );
 }

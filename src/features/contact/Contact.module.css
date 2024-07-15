@@ -1,14 +1,9 @@
-.layout {
-  flex: 1;
-}
-
 .container {
   display: flex;
-  height: 100%;
   gap: 5rem;
 
-  max-width: 90%;
-  margin: 4rem auto 0;
+  width: clamp(20rem, 100%, 190rem);
+  padding: 4rem;
 }
 
 .container h3 {
