@@ -1,6 +1,7 @@
 .header {
   background-color: var(--color-black-background);
   border-bottom: 2px solid var(--color-white-text);
+  height: var(--navHeight);
 }
 
 .transparentBG {

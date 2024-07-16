@@ -9,27 +9,17 @@ import { GiCarDoor } from "react-icons/gi";
 
 import mobile1 from "/src/assets/mobile1.jpg";
 import mobile2 from "/src/assets/mobile2.jpg";
-import mobile3 from "/src/assets/mobile3.jpg";
-import mobile4 from "/src/assets/mobile4.jpg";
-import mobile5 from "/src/assets/mobile5.jpg";
 import mobile6 from "/src/assets/mobile6.jpg";
-import mobile7 from "/src/assets/mobile7.jpg";
 
 function MobileCar() {
   return (
     <div className={styles.container}>
-      <MobileCarLayout />
+      <div className={styles.hero}>
+        <MobileCarInformations />
+        <Gallery />
+      </div>
 
       <MobileCarServces />
-    </div>
-  );
-}
-
-function MobileCarLayout() {
-  return (
-    <div className={styles.mobile_car}>
-      <MobileCarInformations />
-      <Gallery />
     </div>
   );
 }
@@ -42,12 +32,14 @@ function MobileCarInformations() {
         W naszej firmie mamy do dyspozycji profesjonalnie przygotowany pojazd
         mobilny który działa jak wulkanizacja. Działamy bardzo szybko i sprawnie
         natychmiast po telefonie ruszamy na miejsce aby Ci pomóc. Nie wachaj się
-        dzwonić jesteśmy przygotowania na każdą okoliczność na drodze .Nasza
+        dzwonić jesteśmy przygotowania na każdą okoliczność na drodze. Nasza
         Wulkanizacja czeka na twoje zgłoszenie.
       </p>
 
-      <p className={styles.call}>Zadzwoń już teraz</p>
-      <p className={styles.number}>+48 664 137 245</p>
+      <div>
+        <p className={styles.call}>Zadzwoń już teraz</p>
+        <p className={styles.number}>+48 664 137 245</p>
+      </div>
     </div>
   );
 }
@@ -103,13 +95,47 @@ function MobileCarServces() {
 function Gallery() {
   return (
     <div className={styles.gallery}>
-      {/* <img src={mobile1} />
-      <img src={mobile2} />
-      <img src={mobile7} />
-      <img src={mobile3} />
-      <img src={mobile4} />
-      <img src={mobile5} />
-      <img src={mobile6} /> */}
+      <div className={styles.slider}>
+        <figure>
+          <img src={mobile1} />
+        </figure>
+        <figure>
+          <img src={mobile2} />
+        </figure>
+        <figure>
+          <img src={mobile6} />
+        </figure>
+        <figure>
+          <img src={mobile1} />
+        </figure>
+        <figure>
+          <img src={mobile2} />
+        </figure>
+        <figure>
+          <img src={mobile6} />
+        </figure>
+      </div>
+
+      <div className={styles.slider}>
+        <figure>
+          <img src={mobile1} />
+        </figure>
+        <figure>
+          <img src={mobile2} />
+        </figure>
+        <figure>
+          <img src={mobile6} />
+        </figure>
+        <figure>
+          <img src={mobile1} />
+        </figure>
+        <figure>
+          <img src={mobile2} />
+        </figure>
+        <figure>
+          <img src={mobile6} />
+        </figure>
+      </div>
     </div>
   );
 }

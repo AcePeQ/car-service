@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  gap: 5rem;
+  gap: 10rem;
 
   width: clamp(20rem, 100%, 190rem);
   padding: 4rem;
