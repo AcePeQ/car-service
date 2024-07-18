@@ -1,0 +1,40 @@
+.textBox {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  max-width: 90rem;
+  align-items: center;
+
+  margin: 0 auto 0;
+
+  padding: 2rem;
+}
+
+.textBox h3 {
+  font-size: 6.4rem;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: var(--font-neue);
+}
+
+.textBox p {
+  font-size: 2rem;
+}
+
+.textBox .call {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  margin-top: 4rem;
+
+  color: var(--color-green-1);
+}
+
+.textBox .number {
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-align: center;
+
+  color: var(--color-green-1);
+}

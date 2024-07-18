@@ -13,6 +13,7 @@ function Features() {
         buttonTitle="Usługi"
         imgSrc={car1}
         imgAlt="Photo 1"
+        to="/services"
       >
         Nasza wulkanizacja działa już od X lat. Jesteśmy pewni swoich
         umiejętności i naprawimy każdą usterkę jaką napotkałeś w swoim aucie.
@@ -25,6 +26,7 @@ function Features() {
         buttonTitle="Zadzwoń teraz"
         imgSrc={car1}
         imgAlt="Photo 1"
+        to="/contact"
       >
         Nie wiesz gdzie się znajdujemy, chcesz umówić się na naprawę lub zapytać
         o dostępność towaru?
@@ -38,6 +40,7 @@ function Features() {
         buttonTitle="Mobilna wulkanizacja"
         imgSrc={car1}
         imgAlt="Photo 1"
+        to="mobile-car"
       >
         Nasza wulkanizacja działa już od X lat. Jesteśmy pewni swoich
         umiejętności i naprawimy każdą usterkę jaką napotkałeś w swoim aucie.
@@ -48,14 +51,14 @@ function Features() {
   );
 }
 
-function Row({ title, buttonTitle, imgSrc, imgAlt, children }) {
+function Row({ title, buttonTitle, imgSrc, imgAlt, children, to }) {
   return (
     <div className={styles.row}>
       <div className={styles.text_box}>
         <h3>{title}</h3>
         <p>{children}</p>
         <div>
-          <LinkTo type="row" size="big" clip="clip_row">
+          <LinkTo to={to} type="row" size="big" clip="clip_row">
             {buttonTitle}
           </LinkTo>
         </div>

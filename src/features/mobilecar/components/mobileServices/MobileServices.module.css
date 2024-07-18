@@ -1,0 +1,52 @@
+.services {
+  border-top: 2px solid #fff;
+  padding: 20rem 1.25rem;
+  /* margin: 12rem 0; */
+
+  display: grid;
+
+  justify-items: center;
+  align-items: center;
+
+  justify-content: center;
+
+  column-gap: 2rem;
+  row-gap: 6rem;
+  grid-template-columns: repeat(3, minmax(25rem, 35rem));
+
+  background: url(../../../../assets/layered-waves-haikei.svg) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.service {
+  color: var(--color-white-text);
+  border-radius: 6px;
+
+  min-width: 25rem;
+  max-width: 30rem;
+
+  transition: all 0.4s;
+}
+
+.service:hover {
+  transform: translateY(-6px);
+  /* box-shadow: 0 0.5rem 3rem rgba(0, 189, 131, 0.15);
+
+  color: var(--color-green-1); */
+}
+
+.service div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service p {
+  margin-top: 1rem;
+
+  font-size: 2.4rem;
+  font-weight: 600;
+
+  text-align: center;
+}

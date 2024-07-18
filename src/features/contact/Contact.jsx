@@ -6,12 +6,14 @@ import Form from "./components/formEmail/Form";
 
 function Contact() {
   return (
-    <div className={styles.container}>
-      <Form />
+    <div className={styles.layout}>
+      <div className={styles.container}>
+        <Form />
 
-      <div className={styles.informations}>
-        <Informations />
-        <Map />
+        <div className={styles.informations}>
+          <Informations />
+          <Map />
+        </div>
       </div>
     </div>
   );

@@ -1,0 +1,76 @@
+.gallery {
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  background: linear-gradient(
+    to left,
+    transparent,
+    var(--color-black-background)
+  );
+  width: 20%;
+  height: 100%;
+}
+
+.gallery::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--color-black-background)
+  );
+  width: 20%;
+  height: 100%;
+}
+
+.gallery:hover > * {
+  animation-play-state: paused;
+}
+
+.slider {
+  display: inline-block;
+  animation: 20s sliderAnimation linear infinite;
+}
+
+.gallery figure {
+  width: 45rem;
+  display: inline-block;
+  margin: 0 3rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 3px;
+
+  transition: all 0.3s;
+}
+
+@keyframes sliderAnimation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.padding {
+  padding: 3rem 0;
+}

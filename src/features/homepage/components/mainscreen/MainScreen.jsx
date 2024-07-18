@@ -21,10 +21,15 @@ function MainScreen() {
         </p>
 
         <div className={styles.buttons}>
-          <LinkTo type="primary" size="big" clip="clip_primary" to="/">
+          <LinkTo type="primary" size="big" clip="clip_primary" to="/contact">
             Kontakt
           </LinkTo>
-          <LinkTo type="secondary" size="big" clip="clip_secondary" to="/page">
+          <LinkTo
+            type="secondary"
+            size="big"
+            clip="clip_secondary"
+            to="/mobile-car"
+          >
             Moblina wulkanizacja
           </LinkTo>
         </div>

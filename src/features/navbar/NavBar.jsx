@@ -14,7 +14,7 @@ function NavBar({ transparent = false }) {
           <ul>
             <LinkNav to="/">Strona główna</LinkNav>
             <LinkNav to="/mobile-car">Moblina wulkanizacja</LinkNav>
-            <LinkNav to="/page2">Usługi</LinkNav>
+            <LinkNav to="/services">Usługi</LinkNav>
             <LinkNav to="/contact">Kontakt</LinkNav>
           </ul>
         </nav>
