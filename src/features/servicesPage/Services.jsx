@@ -1,58 +1,32 @@
+import ServiceBoxes from "./components/serviceBoxes/ServiceBoxes";
+import ServiceCar from "./components/serviceCar/ServiceCar";
 import styles from "./Services.module.css";
-
-import { GiCarWheel } from "react-icons/gi";
 
 function Services() {
   return (
     <div className={styles.container}>
       <div className={styles.services}>
-        {/* <h3>Nasze usługi</h3>
-        <p className={styles.subtext}>
-          Od prostych usług wymiany opon aż po najcięższe przypadki
-        </p> */}
-
-        <div className={styles.boxaa}>
+        <div className={styles.max_box}>
           <p className={styles.title}>Samochód osobowy</p>
-          <div className={styles.service}>
-            <figure className={styles.box4}>
-              <img src="/src/assets/car1.jpg" />
-            </figure>
 
-            <div className={`${styles.box} ${styles.box1}`}>
-              <div>
-                <GiCarWheel size={84} />
-              </div>
-              <p className={styles.titleBox}>Naprawa opony</p>
-            </div>
-
-            <div className={`${styles.box} ${styles.box2}`}>
-              <div>
-                <GiCarWheel size={84} />
-              </div>
-              <p className={styles.titleBox}>Naprawa opony</p>
-            </div>
-
-            <div className={`${styles.box} ${styles.box3}`}>
-              <div>
-                <GiCarWheel size={84} />
-              </div>
-              <p className={styles.titleBox}>Naprawa opony</p>
-            </div>
-            <div className={`${styles.box} ${styles.box6}`}>
-              <div>
-                <GiCarWheel size={84} />
-              </div>
-              <p className={styles.titleBox}>Naprawa opony</p>
-            </div>
-            <div className={`${styles.box} ${styles.box5}`}>
-              <div>
-                <GiCarWheel size={84} />
-              </div>
-              <p className={styles.titleBox}>Naprawa opony</p>
-            </div>
-          </div>
+          <Service />
         </div>
       </div>
+    </div>
+  );
+}
+
+function Service() {
+  return (
+    <div className={styles.service}>
+      <p className={styles.subtext}>
+        To nie wszystkie usługi które oferujemy
+        <br />
+        Zadzwoń i zobacz co jeszcze oferujemy
+      </p>
+
+      <ServiceCar />
+      <ServiceBoxes />
     </div>
   );
 }

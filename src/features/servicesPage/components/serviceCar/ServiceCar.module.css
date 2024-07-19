@@ -1,0 +1,10 @@
+.car {
+  grid-area: 2 / 4 / 11 / 10;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.car img {
+  width: 90%;
+}
