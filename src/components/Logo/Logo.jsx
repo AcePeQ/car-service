@@ -4,7 +4,7 @@ import styles from "./Logo.module.css";
 
 function Logo() {
   return (
-    <Link to="/">
+    <Link className={styles.anchor} to="/">
       <img
         src="/src/assets/logo.png"
         alt="Logo wulkanizacji woas"

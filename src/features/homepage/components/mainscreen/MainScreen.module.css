@@ -58,3 +58,76 @@
   justify-content: space-between;
   align-items: center;
 }
+
+@media only screen and (max-width: 43.75em) {
+  .main {
+    align-self: initial;
+    align-items: initial;
+  }
+
+  .mainScreen {
+    border: none;
+    border-radius: 0;
+
+    justify-content: center;
+
+    width: 100%;
+
+    padding: 4rem;
+  }
+}
+
+@media only screen and (max-width: 35.625em) {
+  .mainScreen {
+    text-wrap: balance;
+    padding: 4rem 1rem;
+  }
+
+  .mainScreen h1 {
+    font-size: 8.4rem;
+  }
+}
+
+@media only screen and (max-width: 30em) {
+  .mainScreen h1 {
+    font-size: 7.2rem;
+    letter-spacing: 6px;
+  }
+
+  .subText {
+    font-size: 2.6rem;
+  }
+
+  .subTextLower {
+    font-size: 3.2rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .buttons a {
+    width: 25rem;
+    flex: 0 1 auto;
+  }
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .mainScreen {
+    padding: 4rem 0.5rem;
+  }
+
+  .mainScreen h1 {
+    font-size: 6.4rem;
+    letter-spacing: 4px;
+  }
+
+  .subText {
+    font-size: 2.2rem;
+  }
+
+  .subTextLower {
+    font-size: 3rem;
+  }
+}

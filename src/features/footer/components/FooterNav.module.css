@@ -24,3 +24,29 @@
   color: var(--color-green-1);
   transform: translateX(9px);
 }
+
+@media only screen and (max-width: 73.4375em) {
+  .nav {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}
+
+@media only screen and (max-width: 64.375em) {
+  .nav {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
+
+@media only screen and (max-width: 45.625em) {
+  .nav ul {
+    align-items: flex-end;
+  }
+}
+
+@media only screen and (max-width: 30em) {
+  .nav ul {
+    align-items: initial;
+  }
+}

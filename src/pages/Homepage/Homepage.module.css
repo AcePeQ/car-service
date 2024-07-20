@@ -9,3 +9,30 @@
 
   position: relative;
 }
+
+@media only screen and (max-width: 108.8em) {
+  .feature {
+    margin: 25rem 2rem;
+    padding: 20rem 5rem 5rem 5rem;
+  }
+}
+
+@media only screen and (max-width: 84.4em) {
+  .feature {
+    margin: 20rem 1.5rem 15rem 1.5rem;
+    padding: 15rem 5rem 5rem 5rem;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  .feature {
+    margin: 20rem 0 0;
+    border-radius: 0;
+  }
+}
+
+@media only screen and (max-width: 35.625em) {
+  .feature {
+    padding: 15rem 0 5rem 0;
+  }
+}

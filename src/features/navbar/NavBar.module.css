@@ -24,6 +24,18 @@
   gap: 5rem;
 }
 
+@media only screen and (max-width: 84.4em) {
+  .nav ul {
+    gap: 1.5rem;
+  }
+}
+
 .nav li {
   position: relative;
+}
+
+@media only screen and (max-width: 50em) {
+  .header {
+    display: none;
+  }
 }

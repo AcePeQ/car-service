@@ -29,10 +29,9 @@ function Features() {
         to="/contact"
       >
         Nie wiesz gdzie się znajdujemy, chcesz umówić się na naprawę lub zapytać
-        o dostępność towaru?
-        <br /> Zadzwoń już teraz a odpowiemy na każde twoje pytanie i pomożemy
-        ci z każdym problemem. Nie zajmujemy się tylko naprawą aut, kupisz także
-        u nas nowe opony, felgi i wiele wiele innych
+        o dostępność towaru? Zadzwoń już teraz a odpowiemy na każde twoje
+        pytanie i pomożemy ci z każdym problemem. Nie zajmujemy się tylko
+        naprawą aut, kupisz także u nas nowe opony, felgi i wiele wiele innych
       </Row>
 
       <Row
@@ -41,6 +40,7 @@ function Features() {
         imgSrc={car1}
         imgAlt="Photo 1"
         to="mobile-car"
+        type="last"
       >
         Nasza wulkanizacja działa już od X lat. Jesteśmy pewni swoich
         umiejętności i naprawimy każdą usterkę jaką napotkałeś w swoim aucie.
@@ -51,9 +51,9 @@ function Features() {
   );
 }
 
-function Row({ title, buttonTitle, imgSrc, imgAlt, children, to }) {
+function Row({ title, buttonTitle, imgSrc, imgAlt, children, to, type }) {
   return (
-    <div className={styles.row}>
+    <div className={`${styles.row} ${type === "last" ? styles.row_last : ""}`}>
       <div className={styles.text_box}>
         <h3>{title}</h3>
         <p>{children}</p>

@@ -8,3 +8,17 @@
 
   transform: translateX(-50%);
 }
+
+@media only screen and (max-width: 84.4em) {
+  .tire {
+    width: 35rem;
+    top: -17.5rem;
+  }
+}
+
+@media only screen and (max-width: 30em) {
+  .tire {
+    width: 30rem;
+    top: -15.5rem;
+  }
+}
