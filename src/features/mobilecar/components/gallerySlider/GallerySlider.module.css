@@ -74,3 +74,9 @@
 .padding {
   padding: 3rem 0;
 }
+
+@media only screen and (max-width: 30em) {
+  .gallery figure {
+    width: 35rem;
+  }
+}

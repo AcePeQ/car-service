@@ -40,3 +40,28 @@
 
   color: var(--color-green-1);
 }
+
+@media only screen and (max-width: 64.375em) {
+  .textBox p {
+    font-size: 2.4rem;
+    text-align: initial;
+
+    text-wrap: initial;
+  }
+
+  .textBox .call {
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 30em) {
+  .textBox h3 {
+    padding: 0 2rem;
+    line-height: 1.1;
+  }
+
+  .textBox p {
+    text-align: center;
+    text-wrap: wrap;
+  }
+}

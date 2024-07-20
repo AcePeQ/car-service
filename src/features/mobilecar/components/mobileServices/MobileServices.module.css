@@ -1,7 +1,6 @@
 .services {
   border-top: 2px solid #fff;
   padding: 20rem 1.25rem;
-  /* margin: 12rem 0; */
 
   display: grid;
 
@@ -31,9 +30,6 @@
 
 .service:hover {
   transform: translateY(-6px);
-  /* box-shadow: 0 0.5rem 3rem rgba(0, 189, 131, 0.15);
-
-  color: var(--color-green-1); */
 }
 
 .service div {
@@ -49,4 +45,21 @@
   font-weight: 600;
 
   text-align: center;
+}
+
+@media only screen and (max-width: 40.625em) {
+  .services {
+    grid-template-columns: repeat(2, minmax(25rem, 35rem));
+
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media only screen and (max-width: 30em) {
+  .services {
+    grid-template-columns: repeat(1, minmax(25rem, 35rem));
+
+    padding: 10rem 1.25rem;
+  }
 }
