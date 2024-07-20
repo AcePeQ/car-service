@@ -129,3 +129,29 @@
   background-color: var(--color-green-1);
   color: var(--color-white-text);
 }
+
+@media only screen and (max-width: 73.4375em) {
+  .form_email {
+    min-width: 60%;
+    align-self: center;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  .form_email {
+    min-width: 80%;
+    align-self: center;
+  }
+}
+
+@media only screen and (max-width: 40.625em) {
+  .form_email {
+    min-width: 95%;
+  }
+}
+
+@media only screen and (max-width: 30em) {
+  .form_email {
+    min-width: 95%;
+  }
+}

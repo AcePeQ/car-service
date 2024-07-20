@@ -29,6 +29,7 @@
   .nav {
     grid-column: 2/3;
     grid-row: 2/3;
+    justify-self: end;
   }
 }
 
@@ -36,12 +37,14 @@
   .nav {
     grid-column: 2/3;
     grid-row: 1/2;
+    justify-self: initial;
   }
 }
 
-@media only screen and (max-width: 45.625em) {
-  .nav ul {
-    align-items: flex-end;
+@media only screen and (max-width: 60.3125em) {
+  .nav {
+    grid-row: 2/3;
+    grid-column: 1/-1;
   }
 }
 

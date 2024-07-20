@@ -8,3 +8,9 @@
 .car img {
   width: 90%;
 }
+
+@media only screen and (max-width: 60.3125em) {
+  .car img {
+    width: 100%;
+  }
+}

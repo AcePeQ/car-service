@@ -67,3 +67,14 @@
   font-size: 2.4rem;
   text-transform: uppercase;
 }
+
+@media only screen and (max-width: 60.3125em) {
+  .box {
+    padding: 2rem 0;
+  }
+
+  .box svg {
+    width: 9.6rem;
+    height: 9.6rem;
+  }
+}

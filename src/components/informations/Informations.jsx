@@ -4,9 +4,9 @@ import { BsDoorOpen } from "react-icons/bs";
 
 import styles from "./Informations.module.css";
 
-export default function Informations() {
+export default function Informations({ type }) {
   return (
-    <div className={styles.information_box}>
+    <div className={`${styles.information_box} ${styles[type]}`}>
       <div className={styles.column}>
         <p>
           <span className={styles.icon}>

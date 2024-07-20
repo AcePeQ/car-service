@@ -11,7 +11,7 @@ function Contact() {
         <Form />
 
         <div className={styles.informations}>
-          <Informations />
+          <Informations type="contact_page" />
           <Map />
         </div>
       </div>

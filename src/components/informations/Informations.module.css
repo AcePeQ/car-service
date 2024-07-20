@@ -69,6 +69,10 @@
     grid-column: 1/-1;
     grid-row: 3/4;
   }
+
+  .column p {
+    font-size: 2.2rem;
+  }
 }
 
 @media only screen and (max-width: 50em) {
@@ -85,6 +89,13 @@
   .information_box {
     flex-wrap: wrap;
     gap: 4rem;
+  }
+}
+
+@media only screen and (max-width: 40.625em) {
+  .contact_page {
+    justify-content: center;
+    column-gap: 20rem;
   }
 }
 

@@ -26,9 +26,20 @@
   }
 }
 
+@media only screen and (max-width: 60.3125em) {
+  .footer {
+    display: grid;
+    gap: 0;
+    row-gap: 4rem;
+    grid-template-columns: 1fr;
+
+    justify-items: center;
+  }
+}
+
 @media only screen and (max-width: 45.625em) {
   .footer {
-    justify-items: initial;
+    justify-items: center;
   }
 }
 
