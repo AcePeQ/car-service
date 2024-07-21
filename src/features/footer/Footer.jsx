@@ -7,7 +7,7 @@ import FooterNav from "./components/FooterNav";
 function Footer() {
   return (
     <footer className={styles.footer}>
-      <Logo />
+      <Logo type="footer" />
       <Informations />
       <FooterNav />
     </footer>
