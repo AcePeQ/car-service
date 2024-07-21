@@ -12,3 +12,12 @@
 
   position: relative;
 }
+
+.li_temp a:active,
+.li_temp a:focus {
+  color: var(--color-green-1);
+}
+
+.li_temp {
+  width: max-content;
+}

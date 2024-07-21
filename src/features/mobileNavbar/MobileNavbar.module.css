@@ -19,10 +19,9 @@
   border: none;
 
   background-color: var(--color-black-background);
-}
-
-.mobileNavBtn {
   color: var(--color-white-text);
+
+  cursor: pointer;
 }
 
 .nav {
@@ -56,6 +55,10 @@
   transform: translateX(0);
   opacity: 1;
   pointer-events: initial;
+}
+
+.nav div {
+  display: none !important;
 }
 
 .nav ul {

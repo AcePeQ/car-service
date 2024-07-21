@@ -12,7 +12,6 @@ function MobileNavbar() {
 
   function handleOpen() {
     setIsOpen(!isOpen);
-    console.log("elo");
   }
 
   return (

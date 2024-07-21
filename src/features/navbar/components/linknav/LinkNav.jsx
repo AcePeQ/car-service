@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import styles from "./LinkNav.module.css";
+import { useMediaQuery } from "react-responsive";
 
 const controls = {
   initial: {
