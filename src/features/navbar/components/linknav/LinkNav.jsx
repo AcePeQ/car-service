@@ -23,7 +23,7 @@ const controls = {
   },
 };
 
-export default function LinkNav({ children, to }) {
+export default function LinkNav({ children, to, onClick }) {
   const activeState = ({ isActive }) => {
     return {
       borderBottom: isActive ? `2px solid #03594a` : "",
@@ -32,6 +32,7 @@ export default function LinkNav({ children, to }) {
 
   return (
     <motion.li
+      onClick={onClick}
       initial="initial"
       whileHover="animate"
       className={styles.li_temp}

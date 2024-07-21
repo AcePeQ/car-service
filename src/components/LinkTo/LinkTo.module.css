@@ -1,7 +1,7 @@
-.link {
+.link:link,
+.link:visited {
   display: inline-block;
   font-family: inherit;
-  background: none;
   cursor: pointer;
   text-decoration: none;
   text-align: center;
@@ -12,12 +12,22 @@
   position: relative;
 }
 
-.primary {
+.primary:link,
+.primary:visited {
   background-color: var(--color-white-text);
   color: var(--color-black-text);
+
+  transition: all 0.4s;
 }
 
-.secondary {
+.primary:active,
+.primary:focus {
+  background-color: var(--color-green-1);
+  color: var(--color-white-text);
+}
+
+.secondary:link,
+.secondary:visited {
   color: var(--color-white-text);
 
   display: flex;
@@ -25,11 +35,30 @@
   align-items: center;
 }
 
-.row {
+.secondary:active,
+.secondary:focus {
+  color: var(--color-green-1);
+  background-color: transparent;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row:link,
+.row:visited {
   background-color: var(--color-black-text);
   color: var(--color-white-text);
 
+  transition: all 0.4s;
+
   box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.row:active,
+.row:focus {
+  background-color: var(--color-green-1);
+  color: var(--color-white-text);
 }
 
 .big {
