@@ -1,24 +1,28 @@
+@import "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css";
+
 .map_container {
   width: 100%;
   height: 55rem;
-
-  overflow: hidden;
 }
 
 .map {
-  height: calc(100% + 4px);
-  width: calc(100% + 4px);
-
-  margin: -2px;
-
-  border: none !important;
-  border-radius: 6px;
+  height: 100%;
+  width: 100%;
 }
 
-.gm-style iframe + div {
-  border: none !important;
+:global(.leaflet-popup .leaflet-popup-content-wrapper) {
+  background-color: var(--color-black-background);
+  color: var(--color-white-text);
+  padding-right: 0.6rem;
 }
 
-:global(.gm-style iframe + div) {
-  border: none !important;
+:global(.leaflet-popup .leaflet-popup-content) {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+:global(.leaflet-popup .leaflet-popup-tip) {
+  background-color: var(--color-black-background);
 }
