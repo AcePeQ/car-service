@@ -15,7 +15,7 @@ function MobileCarInformations() {
         Moblina wulkanizacja
       </motion.h3>
       <motion.p
-        variants={FadeIn("left", 0.2, -75, 2, "spring")}
+        variants={FadeIn("left", 0.1, -75, 2, "spring")}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
@@ -28,7 +28,7 @@ function MobileCarInformations() {
       </motion.p>
 
       <motion.div
-        variants={FadeIn("right", 0.2, 100, 2, "spring")}
+        variants={FadeIn("right", 0.1, 100, 2, "spring")}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
