@@ -2,6 +2,8 @@ import LinkTo from "../../components/LinkTo/LinkTo";
 import styles from "./Features.module.css";
 
 import car1 from "../../assets/car1.jpg";
+import { FadeIn } from "../../utils/Animations";
+import { motion } from "framer-motion";
 
 function Features() {
   return (
@@ -53,7 +55,13 @@ function Features() {
 
 function Row({ title, buttonTitle, imgSrc, imgAlt, children, to, type }) {
   return (
-    <div className={`${styles.row} ${type === "last" ? styles.row_last : ""}`}>
+    <motion.div
+      variants={FadeIn("left", 0.2, 100, 1, "spring")}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+      className={`${styles.row} ${type === "last" ? styles.row_last : ""}`}
+    >
       <div className={styles.text_box}>
         <h3>{title}</h3>
         <p>{children}</p>
@@ -66,7 +74,7 @@ function Row({ title, buttonTitle, imgSrc, imgAlt, children, to, type }) {
       <figure className={styles.img_box}>
         <img src={imgSrc} alt={imgAlt} />
       </figure>
-    </div>
+    </motion.div>
   );
 }
 

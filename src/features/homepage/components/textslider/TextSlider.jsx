@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import styles from "./TextSlider.module.css";
 import AnimatedSpan from "./AnimatedSpan";
 
+import { FadeIn } from "../../../../utils/Animations";
+import { motion } from "framer-motion";
+
 function TextSlider() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -17,7 +20,13 @@ function TextSlider() {
   }, []);
 
   return (
-    <div className={styles.slider}>
+    <motion.div
+      variants={FadeIn("down", 0.2, 50, 0.5)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+      className={styles.slider}
+    >
       <AnimatedSpan
         windowWidth={windowWidth}
         duration="20"
@@ -46,7 +55,7 @@ function TextSlider() {
       >
         Jeden z najlepszych mechaników w Grębkowkie
       </AnimatedSpan>
-    </div>
+    </motion.div>
   );
 }
 

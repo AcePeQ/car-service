@@ -2,9 +2,18 @@ import styles from "./MainScreen.module.css";
 
 import LinkTo from "../../../../components/LinkTo/LinkTo";
 
+import { FadeIn } from "../../../../utils/Animations";
+import { motion } from "framer-motion";
+
 function MainScreen() {
   return (
-    <div className={styles.main}>
+    <motion.div
+      variants={FadeIn("right", 0, -150, 0.9)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+      className={styles.main}
+    >
       <div className={styles.mainScreen}>
         <h1>
           Wulkanizacja
@@ -34,7 +43,7 @@ function MainScreen() {
           </LinkTo>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -3,9 +3,16 @@ import styles from "./NavBar.module.css";
 import Logo from "../../components/Logo/Logo";
 import LinkNav from "./components/linknav/LinkNav";
 
+import { FadeIn } from "../../utils/Animations";
+import { motion } from "framer-motion";
+
 function NavBar({ transparent = false }) {
   return (
-    <div
+    <motion.div
+      variants={FadeIn("up", 0.2, -50, 0.5)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
       className={`${styles.header} ${transparent ? styles.transparentBG : ""}`}
     >
       <div className={styles.navigation}>
@@ -19,7 +26,7 @@ function NavBar({ transparent = false }) {
           </ul>
         </nav>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
