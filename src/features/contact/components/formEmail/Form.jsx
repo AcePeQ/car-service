@@ -1,28 +1,62 @@
 import styles from "./Form.module.css";
 
+import { FadeIn } from "../../../../utils/Animations";
+import { motion } from "framer-motion";
+
 function Form() {
   return (
     <form className={styles.form_email}>
-      <h3>Napisz do nas</h3>
+      <motion.h3
+        variants={FadeIn("down", 0.2, 50, 0.75)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+      >
+        Napisz do nas
+      </motion.h3>
 
-      <div className={styles.form_row}>
+      <motion.div
+        variants={FadeIn("down", 0.4, 50, 0.75)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className={styles.form_row}
+      >
         <input id="name" type="text" required placeholder="Imie" />
         <label htmlFor="name">Imie</label>
-      </div>
+      </motion.div>
 
-      <div className={styles.form_row}>
+      <motion.div
+        variants={FadeIn("down", 0.6, 50, 0.75)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className={styles.form_row}
+      >
         <input id="email" type="email" required placeholder="Adres e-mail" />
         <label htmlFor="email">Adres e-mail</label>
-      </div>
+      </motion.div>
 
-      <div className={styles.form_row}>
+      <motion.div
+        variants={FadeIn("down", 0.8, 50, 0.75)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className={styles.form_row}
+      >
         <textarea placeholder="Wiadomość" />
         <label>Wiadomość</label>
-      </div>
+      </motion.div>
 
-      <div className={styles.form_buttons}>
+      <motion.div
+        variants={FadeIn("down", 1, 50, 0.75)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className={styles.form_buttons}
+      >
         <button type="submit">Wyślij</button>
-      </div>
+      </motion.div>
     </form>
   );
 }

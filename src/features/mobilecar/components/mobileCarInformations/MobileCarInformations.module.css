@@ -8,6 +8,8 @@
   margin: 0 auto 0;
 
   padding: 2rem;
+
+  overflow-x: hidden;
 }
 
 .textBox h3 {
