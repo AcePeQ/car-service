@@ -13,7 +13,9 @@
   row-gap: 6rem;
   grid-template-columns: repeat(3, minmax(25rem, 35rem));
 
-  background: url(../../../../assets/layered-waves-haikei.svg) no-repeat;
+  position: relative;
+
+  background: url(../../../../assets/waves2.svg) no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -21,17 +23,13 @@
 .service {
   color: var(--color-white-text);
   border-radius: 6px;
-
   min-width: 25rem;
   max-width: 30rem;
-
   transition: all 0.4s;
 }
-
 .service:hover {
   transform: translateY(-6px);
 }
-
 .service div {
   display: flex;
   justify-content: center;
@@ -40,26 +38,20 @@
 
 .service p {
   margin-top: 1rem;
-
   font-size: 2.4rem;
   font-weight: 600;
-
   text-align: center;
 }
-
 @media only screen and (max-width: 40.625em) {
   .services {
     grid-template-columns: repeat(2, minmax(25rem, 35rem));
-
     background-size: cover;
     background-position: center;
   }
 }
-
 @media only screen and (max-width: 30em) {
   .services {
     grid-template-columns: repeat(1, minmax(25rem, 35rem));
-
     padding: 10rem 1.25rem;
   }
 }
