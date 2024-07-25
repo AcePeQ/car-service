@@ -35,9 +35,6 @@ img {
 }
 
 .title {
-  grid-column: 1/-1;
-  grid-row: 1 / span 2;
-
   font-size: 6.4rem;
   letter-spacing: 2px;
   text-align: center;
@@ -81,5 +78,13 @@ img {
     gap: 5rem;
 
     margin-top: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 32.5em) {
+  .title {
+    font-size: 5.6rem;
+    padding: 0 8rem;
+    line-height: 1.2;
   }
 }

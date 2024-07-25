@@ -1,3 +1,4 @@
+import { useService } from "../../contexts/ServiceContext";
 import styles from "./ServiceBoxes.module.css";
 
 import { GiCarWheel } from "react-icons/gi";
@@ -5,76 +6,51 @@ import { GiCarWheel } from "react-icons/gi";
 const ICON_SIZE = 96;
 
 function ServiceBoxes() {
+  const { currentServices } = useService();
+
   return (
     <>
-      <ServiceBox title="Naprawa opon" boxNr="box1">
+      <ServiceBox service={currentServices[0]} boxNr="box1">
         <div>
           <GiCarWheel size={ICON_SIZE} />
-        </div>
-        <div className={styles.additional_info}>
-          <p>
-            To tutaj naprawisz opony. Jesteśmy tu po to aby ci to ułatwić daj
-            nam znać a my tam będziemy
-          </p>
         </div>
       </ServiceBox>
 
-      <ServiceBox title="Naprawa opon" boxNr="box2">
+      <ServiceBox service={currentServices[1]} boxNr="box2">
         <div>
           <GiCarWheel size={ICON_SIZE} />
-        </div>
-        <div className={styles.additional_info}>
-          <p>
-            To tutaj naprawisz opony. Jesteśmy tu po to aby ci to ułatwić daj
-            nam znać a my tam będziemy
-          </p>
         </div>
       </ServiceBox>
 
-      <ServiceBox title="Naprawa opon" boxNr="box3">
+      <ServiceBox service={currentServices[2]} boxNr="box3">
         <div>
           <GiCarWheel size={ICON_SIZE} />
-        </div>
-        <div className={styles.additional_info}>
-          <p>
-            To tutaj naprawisz opony. Jesteśmy tu po to aby ci to ułatwić daj
-            nam znać a my tam będziemy
-          </p>
         </div>
       </ServiceBox>
 
-      <ServiceBox title="Naprawa opon" boxNr="box4">
+      <ServiceBox service={currentServices[3]} boxNr="box4">
         <div>
           <GiCarWheel size={ICON_SIZE} />
-        </div>
-        <div className={styles.additional_info}>
-          <p>
-            To tutaj naprawisz opony. Jesteśmy tu po to aby ci to ułatwić daj
-            nam znać a my tam będziemy
-          </p>
         </div>
       </ServiceBox>
 
-      <ServiceBox title="Naprawa opon" boxNr="box5">
+      <ServiceBox service={currentServices[4]} boxNr="box5">
         <div>
           <GiCarWheel size={ICON_SIZE} />
-        </div>
-        <div className={styles.additional_info}>
-          <p>
-            To tutaj naprawisz opony. Jesteśmy tu po to aby ci to ułatwić daj
-            nam znać a my tam będziemy
-          </p>
         </div>
       </ServiceBox>
     </>
   );
 }
 
-function ServiceBox({ boxNr, title, children }) {
+function ServiceBox({ boxNr, service, children }) {
   return (
     <div className={`${styles.box} ${styles[boxNr]}`}>
       {children}
-      <p className={styles.titleBox}>{title}</p>
+      <div className={styles.additional_info}>
+        <p>{service.additionalText}</p>
+      </div>
+      <p className={styles.titleBox}>{service.title}</p>
     </div>
   );
 }

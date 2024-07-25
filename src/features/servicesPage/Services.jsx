@@ -3,15 +3,17 @@ import ServiceCar from "./components/serviceCar/ServiceCar";
 import styles from "./Services.module.css";
 
 import { useMediaQuery } from "react-responsive";
+import { useService } from "./contexts/ServiceContext";
 
 function Services() {
   const isMedium = useMediaQuery({ query: "(max-width: 800px)" });
+  const { currentCarType } = useService();
 
   return (
     <div className={styles.container}>
       <div className={styles.services}>
         <div className={styles.max_box}>
-          <p className={styles.title}>Samochód osobowy</p>
+          <p className={styles.title}>{currentCarType.type}</p>
 
           {!isMedium ? <Service /> : <ServiceMobile />}
         </div>

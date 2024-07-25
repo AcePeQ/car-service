@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { lazy, Suspense } from "react";
 
 import Loader from "./components/loader/Loader";
+import { ServiceProvider } from "./features/servicesPage/contexts/ServiceContext";
 
 const Homepage = lazy(() => import("./pages/Homepage/Homepage"));
 const Contact = lazy(() => import("./features/contact/Contact"));
@@ -16,7 +17,14 @@ export default function App() {
         <Routes>
           <Route index element={<Homepage />} />
           <Route element={<Layout />}>
-            <Route path="/services" element={<Services />} />
+            <Route
+              path="/services"
+              element={
+                <ServiceProvider>
+                  <Services />
+                </ServiceProvider>
+              }
+            />
             <Route path="/mobile-car" element={<MobileCar />} />
             <Route path="/contact" element={<Contact />} />
           </Route>
