@@ -39,10 +39,49 @@ img {
   letter-spacing: 2px;
   text-align: center;
   font-family: var(--font-neue);
+
+  position: relative;
 }
 
 .text {
   font-size: 1.6rem;
+}
+
+.btn {
+  display: inline-block;
+  background: none;
+  outline: none;
+
+  border: 3px solid white;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 6.5rem;
+  height: 6.5rem;
+
+  cursor: pointer;
+
+  position: absolute;
+
+  transform: translateY(-50%);
+}
+
+.btn svg {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.left {
+  top: 50%;
+  left: 5rem;
+}
+
+.right {
+  top: 50%;
+  right: 5rem;
 }
 
 @media only screen and (max-width: 60.3125em) {
@@ -79,9 +118,44 @@ img {
 
     margin-top: 2.5rem;
   }
+
+  .title {
+    padding-bottom: 6.5rem;
+  }
+
+  .left {
+    left: 8rem;
+    top: 13.5rem;
+  }
+
+  .right {
+    right: 8rem;
+    top: 13.5rem;
+  }
 }
 
 @media only screen and (max-width: 32.5em) {
+  .title {
+    font-size: 5.6rem;
+    padding: 0 8rem 6.5rem;
+    line-height: 1.2;
+  }
+
+  .left,
+  .right {
+    top: 11rem;
+  }
+
+  .left {
+    left: 1rem;
+  }
+
+  .right {
+    right: 1rem;
+  }
+}
+
+@media only screen and (max-width: 30em) {
   .title {
     font-size: 5.6rem;
     padding: 0 8rem;

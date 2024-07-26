@@ -2,18 +2,55 @@ import ServiceBoxes from "./components/serviceBoxes/ServiceBoxes";
 import ServiceCar from "./components/serviceCar/ServiceCar";
 import styles from "./Services.module.css";
 
+import { FaChevronLeft } from "react-icons/fa";
+import { FaChevronRight } from "react-icons/fa";
+
 import { useMediaQuery } from "react-responsive";
 import { useService } from "./contexts/ServiceContext";
 
 function Services() {
   const isMedium = useMediaQuery({ query: "(max-width: 800px)" });
-  const { currentCarType } = useService();
+  const { currentCarType, index, dispatch, carTypes } = useService();
+  const carTypesLength = carTypes.length - 1;
+
+  function handleNextService() {
+    if (index === carTypesLength) {
+      dispatch({ type: "service/start" });
+      return;
+    }
+
+    dispatch({ type: "service/nextService" });
+  }
+
+  function handlePreviousService() {
+    if (index === 0) {
+      dispatch({ type: "service/end" });
+      return;
+    }
+
+    dispatch({ type: "service/previousService" });
+  }
 
   return (
     <div className={styles.container}>
       <div className={styles.services}>
         <div className={styles.max_box}>
-          <p className={styles.title}>{currentCarType.type}</p>
+          <p className={styles.title}>
+            <button
+              onClick={handlePreviousService}
+              className={`${styles.btn} ${styles.left}`}
+            >
+              <FaChevronLeft />
+            </button>
+
+            <button
+              onClick={handleNextService}
+              className={`${styles.btn} ${styles.right}`}
+            >
+              <FaChevronRight />
+            </button>
+            {currentCarType.type}
+          </p>
 
           {!isMedium ? <Service /> : <ServiceMobile />}
         </div>
@@ -38,11 +75,13 @@ function Service() {
 }
 
 function ServiceMobile() {
+  const { currentServices } = useService();
+
   return (
     <div className={styles.service}>
       <ServiceCar />
       <div className={styles.flexBoxes}>
-        <ServiceBoxes />
+        <ServiceBoxes key={currentServices} />
       </div>
     </div>
   );

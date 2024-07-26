@@ -1,4 +1,13 @@
 import { createContext, useContext, useReducer } from "react";
+
+import { GiCarWheel } from "react-icons/gi";
+import { PiEngineFill } from "react-icons/pi";
+import { FaOilCan } from "react-icons/fa";
+import { GiFlatTire } from "react-icons/gi";
+import { GiCarDoor } from "react-icons/gi";
+
+const ICON_SIZE = 96;
+
 const carTypesData = [
   {
     type: "Samochód osobowy",
@@ -8,32 +17,37 @@ const carTypesData = [
       {
         title: "Naprawa Opon",
         additionalText: "Tutaj dodatkowy tekst",
+        icon: <GiCarWheel size={ICON_SIZE} />,
       },
       {
         title: "Naprawa Opony",
         additionalText: "Tutaj dodatkowy tekst",
+        icon: <PiEngineFill size={ICON_SIZE} />,
       },
       {
         title: "Naprawa Opony",
         additionalText: "Tutaj dodatkowy tekst",
+        icon: <FaOilCan size={ICON_SIZE} />,
       },
       {
         title: "Naprawa Opony",
         additionalText: "Tutaj dodatkowy tekst",
+        icon: <GiFlatTire size={ICON_SIZE} />,
       },
       {
         title: "Naprawa Opony",
         additionalText: "Tutaj dodatkowy tekst",
+        icon: <GiCarDoor size={ICON_SIZE} />,
       },
     ],
   },
 
   {
     type: "Samochód Ciężarowy",
-    imageURL: "/src/assets/car-bg-1.png",
+    imageURL: "/src/assets/truck2.png",
     services: [
       {
-        title: "Naprawa Opon",
+        title: "Naprawa Op",
         additionalText: "Tutaj dodatkowy tekst",
       },
       {
@@ -69,6 +83,10 @@ function reducer(state, action) {
       return { ...state, index: state.index + 1 };
     case "service/previousService":
       return { ...state, index: state.index - 1 };
+    case "service/start":
+      return { ...state, index: 0 };
+    case "service/end":
+      return { ...state, index: state.carTypes.length - 1 };
     default:
       throw new Error("Something went wrong");
   }
@@ -80,8 +98,6 @@ function ServiceProvider({ children }) {
   const currentServices = currentCarType.services;
   const currentImage = currentCarType.imageURL;
   const currentImageAlt = currentCarType.imageAlt;
-
-  console.log(carTypes, index, currentCarType);
 
   return (
     <ServiceContext.Provider
