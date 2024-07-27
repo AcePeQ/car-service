@@ -23,8 +23,7 @@ function TextSlider() {
     <motion.div
       variants={FadeIn("down", 0.2, 50, 0.5)}
       initial="hidden"
-      whileInView="show"
-      viewport={{ once: true }}
+      animate="show"
       className={styles.slider}
     >
       <AnimatedSpan

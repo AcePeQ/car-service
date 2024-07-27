@@ -10,8 +10,7 @@ function MainScreen() {
     <motion.div
       variants={FadeIn("right", 0, -150, 0.9)}
       initial="hidden"
-      whileInView="show"
-      viewport={{ once: true }}
+      animate="show"
       className={styles.main}
     >
       <div className={styles.mainScreen}>

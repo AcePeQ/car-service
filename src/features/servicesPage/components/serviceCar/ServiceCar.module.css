@@ -4,8 +4,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
+  position: relative;
+}
 .car img {
   width: 90%;
 }
@@ -17,6 +18,10 @@
 }
 
 @media only screen and (max-width: 50em) {
+  .car {
+    min-height: 30rem;
+  }
+
   .car img {
     width: 70%;
   }

@@ -9,8 +9,7 @@ function Form() {
       <motion.h3
         variants={FadeIn("down", 0.2, 50, 0.75)}
         initial="hidden"
-        whileInView="show"
-        viewport={{ once: true }}
+        animate="show"
       >
         Napisz do nas
       </motion.h3>
@@ -18,8 +17,7 @@ function Form() {
       <motion.div
         variants={FadeIn("down", 0.4, 50, 0.75)}
         initial="hidden"
-        whileInView="show"
-        viewport={{ once: true }}
+        animate="show"
         className={styles.form_row}
       >
         <input id="name" type="text" required placeholder="Imie" />
@@ -29,8 +27,7 @@ function Form() {
       <motion.div
         variants={FadeIn("down", 0.6, 50, 0.75)}
         initial="hidden"
-        whileInView="show"
-        viewport={{ once: true }}
+        animate="show"
         className={styles.form_row}
       >
         <input id="email" type="email" required placeholder="Adres e-mail" />
@@ -40,8 +37,7 @@ function Form() {
       <motion.div
         variants={FadeIn("down", 0.8, 50, 0.75)}
         initial="hidden"
-        whileInView="show"
-        viewport={{ once: true }}
+        animate="show"
         className={styles.form_row}
       >
         <textarea placeholder="Wiadomość" />
@@ -51,8 +47,7 @@ function Form() {
       <motion.div
         variants={FadeIn("down", 1, 50, 0.75)}
         initial="hidden"
-        whileInView="show"
-        viewport={{ once: true }}
+        animate="show"
         className={styles.form_buttons}
       >
         <button type="submit">Wyślij</button>

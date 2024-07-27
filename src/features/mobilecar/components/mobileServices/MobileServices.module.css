@@ -26,6 +26,8 @@
   min-width: 25rem;
   max-width: 30rem;
   transition: all 0.4s;
+
+  cursor: pointer;
 }
 .service:hover {
   transform: translateY(-6px);

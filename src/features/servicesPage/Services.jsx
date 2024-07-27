@@ -60,6 +60,8 @@ function Services() {
 }
 
 function Service() {
+  const { index } = useService();
+
   return (
     <div className={styles.service}>
       <p className={styles.subtext}>
@@ -69,19 +71,17 @@ function Service() {
       </p>
 
       <ServiceCar />
-      <ServiceBoxes />
+      <ServiceBoxes key={index} />
     </div>
   );
 }
 
 function ServiceMobile() {
-  const { currentServices } = useService();
-
   return (
     <div className={styles.service}>
       <ServiceCar />
       <div className={styles.flexBoxes}>
-        <ServiceBoxes key={currentServices} />
+        <ServiceBoxes />
       </div>
     </div>
   );

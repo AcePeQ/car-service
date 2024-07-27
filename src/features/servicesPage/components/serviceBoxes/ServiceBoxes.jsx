@@ -19,11 +19,9 @@ function ServiceBoxes() {
 function ServiceBox({ boxNr, service }) {
   return (
     <motion.div
-      variants={FadeIn("up", 0.2, -50, 0.5)}
+      variants={FadeIn("up", 0.2, -30, 0.5)}
       initial="hidden"
-      whileInView="show"
-      viewport={{ once: true }}
-      exit={{ y: 40 }}
+      animate="show"
       className={`${styles.box} ${styles[`box${boxNr + 1}`]}`}
     >
       <div>{service.icon}</div>

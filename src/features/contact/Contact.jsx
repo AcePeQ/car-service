@@ -16,8 +16,7 @@ function Contact() {
         <motion.div
           variants={FadeIn("down", 0.1, 50, 0.7)}
           initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
+          animate="show"
           className={styles.informations}
         >
           <Informations type="contact_page" />

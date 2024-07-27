@@ -3,6 +3,7 @@ import { lazy, Suspense } from "react";
 
 import Loader from "./components/loader/Loader";
 import { ServiceProvider } from "./features/servicesPage/contexts/ServiceContext";
+import ScrollToTop from "./utils/ScrollToTop";
 
 const Homepage = lazy(() => import("./pages/Homepage/Homepage"));
 const Contact = lazy(() => import("./features/contact/Contact"));
@@ -13,6 +14,7 @@ const Services = lazy(() => import("./features/servicesPage/Services"));
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route index element={<Homepage />} />
