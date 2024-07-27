@@ -7,7 +7,6 @@ import { FaChevronRight } from "react-icons/fa";
 
 import { useMediaQuery } from "react-responsive";
 import { useService } from "./contexts/ServiceContext";
-import { AnimatePresence } from "framer-motion";
 
 function Services() {
   const isMedium = useMediaQuery({ query: "(max-width: 800px)" });
