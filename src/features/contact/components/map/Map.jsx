@@ -10,7 +10,7 @@ export default function Map() {
       <MapContainer
         className={styles.map}
         center={SERVICE_POSITION}
-        zoom={16}
+        zoom={15.5}
         scrollWheelZoom={true}
       >
         <TileLayer

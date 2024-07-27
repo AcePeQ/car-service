@@ -1,5 +1,3 @@
-@import "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css";
-
 .map_container {
   width: 100%;
   height: 55rem;
@@ -13,14 +11,10 @@
 :global(.leaflet-popup .leaflet-popup-content-wrapper) {
   background-color: var(--color-black-background);
   color: var(--color-white-text);
-  padding-right: 0.6rem;
 }
 
 :global(.leaflet-popup .leaflet-popup-content) {
   font-size: 1.6rem;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
 }
 
 :global(.leaflet-popup .leaflet-popup-tip) {
