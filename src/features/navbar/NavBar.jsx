@@ -11,8 +11,7 @@ function NavBar({ transparent = false }) {
     <motion.div
       variants={FadeIn("up", 0.2, -50, 0.5)}
       initial="hidden"
-      whileInView="show"
-      viewport={{ once: true }}
+      animate="show"
       className={`${styles.header} ${transparent ? styles.transparentBG : ""}`}
     >
       <div className={styles.navigation}>
