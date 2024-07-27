@@ -35,7 +35,8 @@ function Services() {
     <div className={styles.container}>
       <div className={styles.services}>
         <div className={styles.max_box}>
-          <p className={styles.title}>
+          <p className={styles.title}>{currentCarType.type}</p>
+          <div className={styles.btns}>
             <button
               onClick={handlePreviousService}
               className={`${styles.btn} ${styles.left}`}
@@ -49,8 +50,7 @@ function Services() {
             >
               <FaChevronRight />
             </button>
-            {currentCarType.type}
-          </p>
+          </div>
 
           {!isMedium ? <Service /> : <ServiceMobile />}
         </div>

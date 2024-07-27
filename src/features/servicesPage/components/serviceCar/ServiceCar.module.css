@@ -11,25 +11,38 @@
   width: 90%;
 }
 
+.boxCar {
+  height: 320px;
+
+  display: flex;
+}
+
 @media only screen and (max-width: 60.3125em) {
   .car img {
-    width: 100%;
+    width: 95%;
   }
 }
 
 @media only screen and (max-width: 50em) {
   .car {
-    min-height: 30rem;
+    max-width: 75rem;
   }
 
   .car img {
-    width: 70%;
+    width: 100%;
+    height: auto;
   }
 }
 
 @media only screen and (max-width: 43.75em) {
   .car img {
-    width: 80%;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 32.5em) {
+  .boxCar {
+    height: 250px;
   }
 }
 

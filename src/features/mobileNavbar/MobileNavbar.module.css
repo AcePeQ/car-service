@@ -12,7 +12,7 @@
   padding: 1rem;
   border-radius: 3px;
 
-  z-index: 1000;
+  z-index: 7000;
 
   background: none;
   outline: none;
@@ -25,7 +25,7 @@
 }
 
 .nav {
-  z-index: 9999;
+  z-index: 6000;
 
   background-color: rgba(22, 22, 22, 0.8);
   backdrop-filter: blur(6px);
