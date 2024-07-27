@@ -12,8 +12,8 @@ export function FadeIn(direction, delay, value, duration, type, ease) {
       transition: {
         duration: duration,
         type: type,
-        delay: delay,
         ease: ease,
+        delay: delay,
       },
     },
   };

@@ -19,7 +19,7 @@ function ServiceBoxes() {
 function ServiceBox({ boxNr, service }) {
   return (
     <motion.div
-      variants={FadeIn("up", 0.2, -30, 0.5)}
+      variants={FadeIn("up", 0.2 * boxNr, -35, 0.5)}
       initial="hidden"
       animate="show"
       className={`${styles.box} ${styles[`box${boxNr + 1}`]}`}

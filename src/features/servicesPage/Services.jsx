@@ -7,6 +7,7 @@ import { FaChevronRight } from "react-icons/fa";
 
 import { useMediaQuery } from "react-responsive";
 import { useService } from "./contexts/ServiceContext";
+import { AnimatePresence } from "framer-motion";
 
 function Services() {
   const isMedium = useMediaQuery({ query: "(max-width: 800px)" });
@@ -60,7 +61,7 @@ function Services() {
 }
 
 function Service() {
-  const { index } = useService();
+  const { index, currentImage } = useService();
 
   return (
     <div className={styles.service}>
@@ -70,18 +71,20 @@ function Service() {
         Zadzwoń i zobacz co jeszcze oferujemy
       </p>
 
-      <ServiceCar />
+      <ServiceCar key={currentImage} />
       <ServiceBoxes key={index} />
     </div>
   );
 }
 
 function ServiceMobile() {
+  const { index, currentImage } = useService();
+
   return (
     <div className={styles.service}>
-      <ServiceCar />
+      <ServiceCar key={currentImage} />
       <div className={styles.flexBoxes}>
-        <ServiceBoxes />
+        <ServiceBoxes key={index} />
       </div>
     </div>
   );
