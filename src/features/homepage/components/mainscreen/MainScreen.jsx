@@ -15,7 +15,7 @@ function MainScreen() {
     >
       <div className={styles.mainScreen}>
         <h1>
-          Wulkanizacja
+          Wulkanizacja <br /> auto-szyby
           <p>WOAS</p>
         </h1>
 

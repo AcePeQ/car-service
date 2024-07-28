@@ -3,8 +3,11 @@ import { FiMapPin } from "react-icons/fi";
 import { BsDoorOpen } from "react-icons/bs";
 
 import styles from "./Informations.module.css";
+import getDate from "../../utils/FormatDate";
 
 export default function Informations({ type }) {
+  const isOpen = getDate();
+
   return (
     <div className={`${styles.information_box} ${styles[type]}`}>
       <div className={styles.column}>
@@ -34,7 +37,11 @@ export default function Informations({ type }) {
         </p>
         <p>
           Wulkanizacja aktulanie
-          <span className={styles.status}>Jest CZYNNA</span>
+          {isOpen ? (
+            <span className={styles.statusOpen}>Jest CZYNNA</span>
+          ) : (
+            <span className={styles.statusClose}>Jest NIECZYNNA</span>
+          )}
         </p>
       </div>
 

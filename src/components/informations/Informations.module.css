@@ -41,9 +41,17 @@
   margin-top: 0.2rem;
 }
 
-.status {
+.statusOpen {
   text-align: center;
   color: var(--color-green-1);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.statusClose {
+  text-align: center;
+  color: red;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
