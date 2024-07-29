@@ -44,7 +44,7 @@ function Form() {
 
   return (
     <form ref={form} onSubmit={sendEmail} className={styles.form_email}>
-      {!sending && (
+      {sending && (
         <div className={styles.loader}>
           <div className={styles.loader_spinner}></div>
         </div>
