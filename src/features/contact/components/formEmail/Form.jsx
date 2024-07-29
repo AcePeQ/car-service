@@ -44,7 +44,11 @@ function Form() {
 
   return (
     <form ref={form} onSubmit={sendEmail} className={styles.form_email}>
-      {sending && <div className={styles.loader}>Sending...</div>}
+      {!sending && (
+        <div className={styles.loader}>
+          <div className={styles.loader_spinner}></div>
+        </div>
+      )}
 
       <motion.h3
         variants={FadeIn("down", 0.2, 50, 0.75)}
