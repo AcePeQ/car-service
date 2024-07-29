@@ -6,6 +6,7 @@ import { PiEngineFill } from "react-icons/pi";
 import { FaOilCan } from "react-icons/fa";
 import { GiFlatTire } from "react-icons/gi";
 import { GiCarDoor } from "react-icons/gi";
+import WavesSVG from "../wavesSVG/WavesSVG";
 
 const ICON_SIZE = 84;
 const ICON_FILL = `#fff`;
@@ -13,6 +14,8 @@ const ICON_FILL = `#fff`;
 function MobileCarServces() {
   return (
     <div className={styles.services}>
+      {/* <WavesSVG /> */}
+
       <Service title="Dojazd do klienta">
         <FaMapLocationDot size={ICON_SIZE} fill={ICON_FILL} />
       </Service>
