@@ -1,0 +1,97 @@
+.container {
+  min-height: 100dvh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 6.4rem;
+
+  height: 30rem;
+  aspect-ratio: 1;
+
+  background-color: var(--color-black-background);
+
+  position: relative;
+
+  border-radius: 50%;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.loader::after,
+.loader::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+
+  border-radius: 50%;
+
+  height: 100%;
+  width: 100%;
+
+  padding: 16rem;
+
+  background-image: conic-gradient(
+    from var(--angle),
+    var(--color-green-1),
+    var(--color-green-2),
+    var(--color-green-3),
+    var(--color-green-4),
+    var(--color-green-5),
+    var(--color-green-1)
+  );
+  z-index: -1;
+
+  animation: 3s spin linear infinite;
+}
+
+.loader::before {
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+.bars_1 {
+  width: 45px;
+  aspect-ratio: 1;
+  --c: no-repeat linear-gradient(var(--color-green-1) 0 0);
+  background: var(--c) 0% 50%, var(--c) 50% 50%, var(--c) 100% 50%;
+  background-size: 20% 100%;
+  animation: b1 1s infinite linear;
+}
+@keyframes b1 {
+  0% {
+    background-size: 20% 100%, 20% 100%, 20% 100%;
+  }
+  33% {
+    background-size: 20% 10%, 20% 100%, 20% 100%;
+  }
+  50% {
+    background-size: 20% 100%, 20% 10%, 20% 100%;
+  }
+  66% {
+    background-size: 20% 100%, 20% 100%, 20% 10%;
+  }
+  100% {
+    background-size: 20% 100%, 20% 100%, 20% 100%;
+  }
+}
