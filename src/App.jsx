@@ -4,6 +4,7 @@ import { lazy, Suspense } from "react";
 import Loader from "./components/loader/Loader";
 import { ServiceProvider } from "./features/servicesPage/contexts/ServiceContext";
 import ScrollToTop from "./utils/ScrollToTop";
+import PageNotFound from "./pages/PageNotFound/PageNotFound";
 
 const Homepage = lazy(() => import("./pages/Homepage/Homepage"));
 const Contact = lazy(() => import("./features/contact/Contact"));
@@ -30,6 +31,7 @@ export default function App() {
             <Route path="/mobile-car" element={<MobileCar />} />
             <Route path="/contact" element={<Contact />} />
           </Route>
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </Suspense>
     </BrowserRouter>
