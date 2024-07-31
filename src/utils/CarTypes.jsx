@@ -9,7 +9,7 @@ const ICON_SIZE = 96;
 export const carTypesData = [
   {
     type: "Samochód osobowy",
-    imageURL: "/src/assets/car-bg-1.png",
+    imageURL: "/src/assets/car-bg-2.png",
     imageAlt: "Car type 1",
     services: [
       {
