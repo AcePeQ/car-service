@@ -55,6 +55,8 @@
   border-bottom: 4px solid var(--color-white-background-1);
   padding: 1rem 2rem;
   background: transparent;
+
+  transition: all 0.4s;
 }
 
 .form_row input::placeholder,
@@ -90,6 +92,13 @@
 
   visibility: initial;
   pointer-events: initial;
+}
+
+.form_row input:not(:placeholder-shown),
+.form_row textarea:not(:placeholder-shown),
+.form_row input:focus,
+.form_row textarea:focus {
+  border-bottom: 4px solid var(--color-green-1);
 }
 
 .form_buttons {

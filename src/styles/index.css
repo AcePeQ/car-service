@@ -43,6 +43,10 @@ html {
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+}
+
 @media only screen and (max-width: 84.4em) {
   html {
     font-size: 59.375%;
