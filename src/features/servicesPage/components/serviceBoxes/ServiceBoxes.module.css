@@ -37,7 +37,6 @@
   opacity: 0;
   pointer-events: none;
 
-  /* transform: translateX(-102%); */
   border-radius: 4px;
   transition: all 0.6s;
 
@@ -51,7 +50,6 @@
 }
 
 .box:hover .additional_info {
-  /* transform: translateX(0); */
   opacity: 1;
   pointer-events: initial;
 }

@@ -1,7 +1,5 @@
 .information_box {
   display: flex;
-  /* flex: 0 0 auto; */
-
   gap: 8rem;
 }
 
@@ -51,7 +49,7 @@
 
 .statusClose {
   text-align: center;
-  color: red;
+  color: var(--color-red-1);
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;

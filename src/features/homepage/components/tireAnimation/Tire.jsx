@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import styles from "./Tire.module.css";
 
-import { motion, useInView, useScroll, useSpring } from "framer-motion";
+import { motion, useScroll, useSpring } from "framer-motion";
 
 function Tire() {
   const img = useRef(null);
@@ -16,7 +16,7 @@ function Tire() {
       ref={img}
       style={{ rotate: rotate, translateX: "-50%" }}
       className={styles.tire}
-      src="/src/assets/3dtire.png"
+      src="/3dtire.png"
       alt="3D Tire with rotate 360 animation while scrolling page"
     />
   );

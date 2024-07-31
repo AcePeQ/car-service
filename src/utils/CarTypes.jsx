@@ -9,7 +9,7 @@ const ICON_SIZE = 96;
 export const carTypesData = [
   {
     type: "Samochód osobowy",
-    imageURL: "/src/assets/car-bg-2.png",
+    imageURL: "/carType1.png",
     imageAlt: "Car type 1",
     services: [
       {
@@ -42,7 +42,7 @@ export const carTypesData = [
 
   {
     type: "Samochód Ciężarowy",
-    imageURL: "/src/assets/truck2.png",
+    imageURL: "/carType2.png",
     services: [
       {
         title: "Naprawa Opny2",

@@ -1,7 +1,6 @@
 import LinkTo from "../../components/LinkTo/LinkTo";
 import styles from "./Features.module.css";
 
-import car1 from "../../assets/car1.jpg";
 import { FadeIn } from "../../utils/Animations";
 import { motion } from "framer-motion";
 
@@ -13,7 +12,7 @@ function Features() {
       <Row
         title="Wulkanizacja WOAS"
         buttonTitle="Usługi"
-        imgSrc={car1}
+        imgSrc="/heroBG.jpg"
         imgAlt="Photo 1"
         to="/services"
       >
@@ -26,7 +25,7 @@ function Features() {
       <Row
         title="Zobacz gdzie nas znajdziesz"
         buttonTitle="Zadzwoń teraz"
-        imgSrc={car1}
+        imgSrc="/heroBG.jpg"
         imgAlt="Photo 1"
         to="/contact"
       >
@@ -39,7 +38,7 @@ function Features() {
       <Row
         title="Zadzwoń a my ci pomożemy"
         buttonTitle="Mobilna wulkanizacja"
-        imgSrc={car1}
+        imgSrc="/heroBG.jpg"
         imgAlt="Photo 1"
         to="mobile-car"
         type="last"

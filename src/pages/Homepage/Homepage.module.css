@@ -1,13 +1,11 @@
 .feature {
-  /* border-radius: 2.5rem; */
-
   border-bottom-left-radius: 2.5rem;
   border-bottom-right-radius: 2.5rem;
 
   margin: 0 5rem 10rem;
   padding: 20rem 10rem 5rem 10rem;
 
-  background: url("/src//assets/poly-2.svg") no-repeat;
+  background: url("/featureBG.svg") no-repeat;
   background-size: cover;
 
   overflow: hidden;

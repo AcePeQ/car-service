@@ -6,7 +6,7 @@ function Logo({ type }) {
   return (
     <Link className={styles.anchor} to="/">
       <img
-        src="/src/assets/3.png"
+        src="/logoWOAS.png"
         alt="Logo wulkanizacji woas"
         className={`${styles.logo} ${styles[type]}`}
       />

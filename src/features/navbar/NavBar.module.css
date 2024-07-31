@@ -1,6 +1,6 @@
 .header {
   background-color: var(--color-black-background);
-  border-bottom: 2px solid var(--color-white-text);
+  border-bottom: 2px solid var(--color-white-background-1);
   height: var(--navHeight);
 
   display: flex;

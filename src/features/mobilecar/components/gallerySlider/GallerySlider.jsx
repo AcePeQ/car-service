@@ -1,9 +1,5 @@
 import styles from "./GallerySlider.module.css";
 
-import mobile1 from "/src/assets/mobile1.jpg";
-import mobile2 from "/src/assets/mobile2.jpg";
-import mobile6 from "/src/assets/mobile6.jpg";
-
 function GallerySlider() {
   return (
     <div className={styles.padding}>
@@ -19,22 +15,22 @@ function Slider() {
   return (
     <div className={styles.slider}>
       <figure>
-        <img src={mobile1} />
+        <img src="/sliderIMG1.jpg" />
       </figure>
       <figure>
-        <img src={mobile2} />
+        <img src="/sliderIMG2.jpg" />
       </figure>
       <figure>
-        <img src={mobile6} />
+        <img src="/sliderIMG3.jpg" />
       </figure>
       <figure>
-        <img src={mobile1} />
+        <img src="/sliderIMG4.jpg" />
       </figure>
       <figure>
-        <img src={mobile2} />
+        <img src="/sliderIMG1.jpg" />
       </figure>
       <figure>
-        <img src={mobile6} />
+        <img src="/sliderIMG2.jpg" />
       </figure>
     </div>
   );

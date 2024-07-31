@@ -14,7 +14,7 @@
 
 .primary:link,
 .primary:visited {
-  background-color: var(--color-white-text);
+  background-color: var(--color-white-background-1);
   color: var(--color-black-text);
 
   transition: all 0.4s;
@@ -47,7 +47,7 @@
 
 .row:link,
 .row:visited {
-  background-color: var(--color-black-text);
+  background-color: var(--color-black-background);
   color: var(--color-white-text);
 
   transition: all 0.4s;

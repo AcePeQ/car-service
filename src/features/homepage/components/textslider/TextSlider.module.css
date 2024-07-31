@@ -1,8 +1,8 @@
 .slider {
   background-color: var(--color-black-background);
 
-  border-top: 2px solid var(--color-white-text);
-  border-bottom: 2px solid var(--color-white-text);
+  border-top: 2px solid var(--color-white-background-1);
+  border-bottom: 2px solid var(--color-white-background-1);
 
   height: 8rem;
 

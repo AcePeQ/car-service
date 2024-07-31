@@ -1,5 +1,5 @@
 .services {
-  border-top: 2px solid #fff;
+  border-top: 2px solid var(--color-white-background-1);
   padding: 20rem 1.25rem;
 
   display: grid;
@@ -17,7 +17,7 @@
 
   overflow: hidden;
 
-  background: url(../../../../assets/waves2.svg) no-repeat;
+  background: url(/mobileCarServiceBG.svg) no-repeat;
   background-size: cover;
   position: relative;
 }

@@ -6,6 +6,8 @@
   --color-white-background-1: rgb(244, 243, 247);
   --color-white-background-2: #efedf5;
 
+  --color-black-background-nav-mobile: rgba(22, 22, 22, 0.8);
+
   --color-black-text: #171717;
   --color-white-text: #fff;
 
@@ -17,6 +19,8 @@
   --color-green-4: #284f4b;
   --color-green-5: #173632;
 
+  --color-red-1: #dc2626;
+
   --font-lato: "Lato", sans-serif;
   --font-nosifer: "Nosifer", sans-serif;
   --font-bungee: "Bungee", sans-serif;
@@ -25,42 +29,6 @@
 
   --navHeight: 7.6rem;
 }
-
-/*
-@media only screen and (max-width: 108.8em) {}
-
-@media only screen and (max-width: 100em) {}
-
-@media only screen and (max-width: 87em) {}
-
-@media only screen and (max-width: 84.4em) {}
-
-@media only screen and (max-width: 78.15em) {}
-
-@media only screen and (max-width: 73.4375em) {}
-
-@media only screen and (max-width: 64.375em) {}
-
-@media only screen and (max-width: 60.3125em) {}
-
-@media only screen and (max-width: 50em) {}
-
-@media only screen and (max-width: 45.625em) {}
-
-@media only screen and (max-width: 43.75em) {}
-
-@media only screen and (max-width: 40.625em) {}
-
-@media only screen and (max-width: 35.625em) {}
-
-@media only screen and (max-width: 33.75em) {}
-
-@media only screen and (max-width: 32.5em) {}
-
-@media only screen and (max-width: 30em) {}
-
-@media only screen and (max-width: 23.4375em) {}
-*/
 
 *,
 *::after,
@@ -98,7 +66,7 @@ body {
   font-weight: 400;
   font-family: var(--font-lato);
   color: var(--color-white-text);
-  background-image: url(../assets/zwartevilt.webp);
+  background-image: url(/bodyBG.webp);
 }
 
 img {

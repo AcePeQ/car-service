@@ -27,7 +27,7 @@
 .nav {
   z-index: 6000;
 
-  background-color: rgba(22, 22, 22, 0.8);
+  background-color: var(--color-black-background-nav-mobile);
   backdrop-filter: blur(6px);
 
   position: fixed;
