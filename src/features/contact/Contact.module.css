@@ -1,5 +1,8 @@
 .layout {
   min-height: calc(100dvh - var(--navHeight));
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {

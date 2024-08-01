@@ -1,9 +1,8 @@
 .feature {
-  border-bottom-left-radius: 2.5rem;
-  border-bottom-right-radius: 2.5rem;
-
-  margin: 0 5rem 10rem;
+  margin: 0 auto;
   padding: 20rem 10rem 5rem 10rem;
+
+  max-width: 192rem;
 
   background: url("/featureBG.svg") no-repeat;
   background-size: cover;
@@ -15,7 +14,6 @@
 
 @media only screen and (max-width: 108.8em) {
   .feature {
-    margin: 0 2rem 10rem;
     padding: 20rem 5rem 5rem 5rem;
   }
 }
@@ -28,7 +26,6 @@
 
 @media only screen and (max-width: 50em) {
   .feature {
-    margin: 0;
     border-radius: 0;
   }
 }
