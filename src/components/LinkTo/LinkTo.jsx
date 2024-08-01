@@ -33,6 +33,8 @@ function LinkTo({ children, type, size, to, clip }) {
       to={to}
       initial="initial"
       whileHover="animate"
+      whileFocus="animate"
+      whileTap="animate"
     >
       {type === "secondary" && <FaExternalLinkAlt />}
       {children}

@@ -12,6 +12,7 @@ const controls = {
     height: "2px",
 
     position: "absolute",
+    left: "0px",
     bottom: "0px",
   },
   animate: {
@@ -36,6 +37,8 @@ export default function LinkNav({ children, to, onClick }) {
       onClick={onClick}
       initial="initial"
       whileHover="animate"
+      whileFocus="animate"
+      whileTap="animate"
       className={styles.li_temp}
     >
       <NavLink to={to} style={activeState}>

@@ -20,4 +20,5 @@
 
 .li_temp {
   width: max-content;
+  position: relative;
 }
